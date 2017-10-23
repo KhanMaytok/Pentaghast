@@ -1,0 +1,29 @@
+600002 = {
+    name="Senua"
+    female=yes
+    religion=pagan
+    dynasty=300000
+    culture="celtic"
+    disallow_random_traits = yes
+    trait="fair"
+    trait="brave"
+    trait="elusive_shadow"
+    trait="paranoid"
+    trait="mystic"
+
+    750.1.1={
+        birth="750.1.1"
+        effect = {
+            set_character_flag = is_konan
+        }
+    }
+    766.6.6={
+        effect = {
+            join_society = pentaghast_society
+            set_society_grandmaster = yes
+        }
+    }
+    900.1.1={
+        death="900.1.1"
+    }
+}
