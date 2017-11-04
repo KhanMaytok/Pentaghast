@@ -1,0 +1,26 @@
+#character
+on_startup = {
+	events = {
+		PENTAGHAST.99 # Make Konan flies
+	}
+}
+
+on_yearly_pulse = {
+	events = {
+		PENTAGHAST.1704 # Vee begins to grow
+	}
+}
+
+on_five_year_pulse = {
+	events = {
+		PENTAGHAST.10030 # Have AI characters join societies
+	}
+}
+
+# character
+on_birth = {
+	events = {
+		PENTAGHAST.1701 # Born with odin if is perfect		
+	}
+	
+}

@@ -1,0 +1,883 @@
+backup events.txt
+FROM = {character_event = { id = PENTAGHAST.102 days = 266 } }
+
+
+# PENTAGHAST.104 Give money every year to members of Pentaghast society
+character_event = {
+    id = PENTAGHAST.104
+    hide_window = yes   
+    is_triggered_only = yes
+    is_in_society = yes
+
+    trigger = {
+        society_member_of = pentaghast_society
+    }
+
+    immediate = {
+        wealth = 50
+    }   
+}
+
+# PENTAGHAST.105 A pentaghast decides take a dose of Vir SAND
+character_event = {
+    id = PENTAGHAST.105
+    desc = EVTDESC_MNM_6800
+    picture = GFX_evt_dark_prayer
+    border = GFX_event_normal_frame_religion
+
+    immediate = {
+        set_character_flag = has_taken_vir_sand
+    }
+
+    is_triggered_only = yes
+
+    #Small dose
+    option = {
+        name = EVTOPTA_MNM_6800
+        custom_tooltip = { text = EVTOPTA_MNM_6800_TOOLTIP }
+
+        set_character_flag = vir_sand_small_dose
+
+        hidden_effect = { character_event = { id = PENTAGHAST.106 } }
+    }
+
+    #Regular dose
+    option = {
+        name = EVTOPTB_MNM_6800
+        custom_tooltip = { text = EVTOPTB_MNM_6800_TOOLTIP }
+
+        hidden_effect = { character_event = { id = PENTAGHAST.106 } }
+    }
+
+    #Big dose
+    option = {
+        name = EVTOPTC_MNM_6800
+        custom_tooltip = { text = EVTOPTC_MNM_6800_TOOLTIP }
+
+        set_character_flag = vir_sand_big_dose
+
+        hidden_effect = { character_event = { id = PENTAGHAST.106 } }
+    }
+}
+
+# PENTAGHAST.106 - Vir Sand tombola!
+character_event = {
+    id = PENTAGHAST.106
+    hide_window = yes
+
+    is_triggered_only = yes
+
+    immediate = {
+        remove_trait = weak
+        add_trait = strong
+        add_trait = robust
+        random_list = {
+            20 = { #Great
+                set_character_flag = great_trip
+
+                modifier = {
+                    has_character_flag = vir_sand_big_dose
+                    factor = 2
+                }
+                modifier = {
+                    has_character_flag = vir_sand_small_dose
+                    factor = 0.5
+                }
+                modifier = {
+                    trait = hedonist
+                    factor = 1.5
+                }
+            }
+            60 = { #Good
+                set_character_flag = good_trip
+            }
+            20 = { #Bad
+                set_character_flag = bad_trip
+
+                modifier = {
+                    has_character_flag = vir_sand_big_dose
+                    factor = 1.5
+                }
+                modifier = {
+                    has_character_flag = vir_sand_small_dose
+                    factor = 0.5
+                }
+                modifier = {
+                    has_mental_disorder_trigger = yes
+                    factor = 1.5
+                }
+                modifier = {
+                    has_character_modifier = vir_sand_addict #vir_sand_addict
+                    factor = 1.5
+                }
+                modifier = {
+                    trait = paranoid
+                    factor = 1.5
+                }
+            }
+        }
+
+        #Outcome
+        character_event = { id = PENTAGHAST.107 days = 7 } #Overall outcome
+
+        #Special events, all with 4 day delays, weight with trip flags
+        random_list = {
+            10 = { #Nothing
+                modifier = {
+                    has_character_flag = vir_sand_small_dose
+                    factor = 2
+                }
+                modifier = {
+                    has_character_flag = vir_sand_big_dose
+                    factor = 0.5
+                }
+            }
+            10 = { #Become posessed
+                modifier = {
+                    NOT = { has_character_flag = bad_trip}
+                    factor = 0
+                }
+                modifier = {
+                    has_character_flag = vir_sand_big_dose
+                    factor = 1.5
+                }
+                modifier = {
+                    has_character_flag = vir_sand_small_dose
+                    factor = 0.5
+                }
+                modifier = {
+                    has_character_modifier = vir_sand_addict
+                    factor = 1.5
+                }
+
+                if = {
+                    limit = {
+                        NOT = { trait = possessed}
+                    }
+                    set_character_flag = become_possessed
+                    character_event = { id = MNM.6810 days = 4}
+                }
+            }
+            10 = { #Become paranoid
+                modifier = {
+                    NOT = { has_character_flag = bad_trip}
+                    factor = 0
+                }
+                modifier = {
+                    has_character_flag = vir_sand_big_dose
+                    factor = 1.5
+                }
+                modifier = {
+                    has_character_flag = vir_sand_small_dose
+                    factor = 0.5
+                }
+                modifier = {
+                    has_character_modifier = vir_sand_addict
+                    factor = 1.5
+                }
+                modifier = {
+                    trait = trusting
+                    factor = 0.5
+                }
+                if = {
+                    limit = {
+                        NOT = { trait = paranoid}
+                    }
+                    set_character_flag = become_paranoid
+                    character_event = { id = MNM.6810 days = 4}
+                }
+            }           
+            10 = { #Discover a plot
+                modifier = {
+                    NOT = {has_character_flag = good_trip}
+                    factor = 2
+                }
+                modifier = {
+                    trait = paranoid
+                    factor = 2
+                }
+                modifier = {
+                    trait = possessed
+                    factor = 1.5
+                }
+                modifier = {
+                    NOT = {
+                        top_liege = {
+                            any_realm_character = {
+                                has_plot = yes
+                                NOT = {
+                                    plot_is_known_by = ROOT
+                                }
+                            }
+                        }
+                    }
+                    factor = 0
+                }
+                character_event = { id = MNM.6811}
+            } 
+            10 = { #Gain a lover, perhaps your spouse?
+                modifier = {
+                    has_character_flag = great_trip
+                    factor = 2
+                }
+                modifier = {
+                    has_character_flag = bad_trip
+                    factor = 0
+                }
+                modifier = {
+                    trait = lustful
+                    factor = 1.5
+                }
+                modifier = {
+                    trait = eunuch
+                    factor = 0
+                }
+                modifier = {
+                    has_lover = yes
+                    factor = 0.5
+                }
+                set_character_flag = drug_lover
+                character_event = { id = MNM.6812 days = 4}
+            }
+            20 = { #Gain a friend
+                modifier = {
+                    has_character_flag = great_trip
+                    factor = 2
+                }
+                modifier = {
+                    has_character_flag = bad_trip
+                    factor = 0
+                }
+                modifier = {
+                    trait = paranoid
+                    factor = 0.5
+                }
+                set_character_flag = drug_friend
+                character_event = { id = MNM.6812 days = 4}
+            }
+            10 = { #Discover a cheating spouse
+                modifier = {
+                    is_married = no
+                    factor = 0
+                }
+                modifier = {
+                    NOR = {
+                        any_spouse = {
+                            any_lover = {
+                                NOT = {
+                                    character = ROOT
+                                }
+                            }
+                        }
+                        AND = {
+                            trait = paranoid
+                            any_realm_character = {
+                                same_sex = root
+                                NOT = { character = ROOT }
+                            }
+                        }
+                    }
+                    factor = 0
+                }
+                character_event = { id = MNM.6813 days = 4}
+            }
+            10 = { #Make a fool of yourself
+                modifier = {
+                    has_character_flag = vir_sand_big_dose
+                    factor = 1.5
+                }
+                modifier = {
+                    has_character_flag = vir_sand_small_dose
+                    factor = 0.5
+                }
+                character_event = { id = MNM.6814 days = 4}
+            }
+            10 = { #Die, only if you're already an addict
+                modifier = {
+                    NOT = { has_character_flag = vir_sand_big_dose}
+                    factor = 0.5
+                }
+                modifier = {
+                    NOT = { has_character_flag = bad_trip}
+                    factor = 0
+                }
+                modifier = {
+                    NOT = { has_character_modifier = vir_sand_addict }
+                    factor = 0
+                }
+                modifier = {
+                    has_character_modifier = withdrawal_symptoms
+                    factor = 1.5
+                }
+                modifier = {
+                    has_character_modifier = vir_sand_timer
+                    factor = 2
+                }
+                modifier = {
+                    trait = gluttonous 
+                    factor = 1.5
+                }
+                modifier = {
+                    trait = temperate 
+                    factor = 0.5
+                }
+                modifier = {
+                    health = 5
+                    factor = 0
+                }
+                modifier = {
+                    OR = {
+                        trait = ill
+                        trait = pneumonic
+                        trait = has_tuberculosis
+                        trait = cough
+                        trait = chest_pain
+                    }
+                    factor = 2
+                }
+                character_event = { id = MNM.6815 days = 4}
+            }
+            10 = { # Cure stressed
+                modifier = {
+                    factor = 0
+                    NOT = { trait = stressed }
+                }
+                modifier = {
+                    factor = 0.5
+                    has_character_flag = vir_sand_small_dose
+                }
+                set_character_flag = vir_sand_curing_stressed
+                character_event = { id = MNM.6816 days = 4 }
+            }
+            10 = { # Cure possessed
+                modifier = {
+                    factor = 0
+                    NOT = { trait = possessed }
+                }
+                modifier = {
+                    factor = 0.5
+                    has_character_flag = vir_sand_small_dose
+                }
+                set_character_flag = vir_sand_curing_possessed
+                character_event = { id = MNM.6816 days = 4 }
+            }
+            10 = { # Cure depressed
+                modifier = {
+                    factor = 0
+                    NOT = { trait = depressed }
+                }
+                modifier = {
+                    factor = 0.5
+                    NOT = { has_character_flag = vir_sand_big_dose }
+                }
+                set_character_flag = vir_sand_curing_depressed
+                character_event = { id = MNM.6816 days = 4 }
+            }
+            10 = { # Cure lunatic
+                modifier = {
+                    factor = 0
+                    NOT = { trait = lunatic }
+                }
+                modifier = {
+                    factor = 0
+                    NOT = { has_character_flag = vir_sand_big_dose }
+                }
+                set_character_flag = vir_sand_curing_lunatic
+                character_event = { id = MNM.6816 days = 4 }
+            }
+            10 = { # Diplomatic insight
+                modifier = {
+                    factor = 0
+                    NOT = {
+                        OR = {
+                            has_character_flag = great_trip
+                            has_character_flag = good_trip
+                        }
+                    }
+                }
+                modifier = {
+                    factor = 2
+                    has_character_flag = great_trip
+                }
+                modifier = {
+                    factor = 2
+                    NOT = {
+                        diplomacy = 8
+                    }
+                }
+                modifier = {
+                    factor = 2
+                    NOT = {
+                        diplomacy = 15
+                    }
+                }
+                modifier = {
+                    factor = 0
+                    has_character_modifier = diplomatic_insight
+                }
+                set_character_flag = gains_diplomatic_insight_flag
+                character_event = { id = MNM.6817 days = 4 }
+            }
+            10 = { # Martial insight
+                modifier = {
+                    factor = 0
+                    NOT = {
+                        OR = {
+                            has_character_flag = great_trip
+                            has_character_flag = good_trip
+                        }
+                    }
+                }
+                modifier = {
+                    factor = 2
+                    has_character_flag = great_trip
+                }
+                modifier = {
+                    factor = 2
+                    NOT = {
+                        martial = 8
+                    }
+                }
+                modifier = {
+                    factor = 2
+                    NOT = {
+                        martial = 15
+                    }
+                }
+                modifier = {
+                    factor = 0
+                    has_character_modifier = martial_insight
+                }
+                set_character_flag = gains_martial_insight_flag
+                character_event = { id = MNM.6817 days = 4 }
+            }
+            10 = { # Intrigue insight
+                modifier = {
+                    factor = 0
+                    NOT = {
+                        OR = {
+                            has_character_flag = great_trip
+                            has_character_flag = good_trip
+                        }
+                    }
+                }
+                modifier = {
+                    factor = 2
+                    has_character_flag = great_trip
+                }
+                modifier = {
+                    factor = 2
+                    NOT = {
+                        intrigue = 8
+                    }
+                }
+                modifier = {
+                    factor = 2
+                    NOT = {
+                        intrigue = 15
+                    }
+                }
+                modifier = {
+                    factor = 0
+                    has_character_modifier = intrigue_insight
+                }
+                set_character_flag = gains_intrigue_insight_flag
+                character_event = { id = MNM.6817 days = 4 }
+            }
+            10 = { # Learning insight
+                modifier = {
+                    factor = 0
+                    NOT = {
+                        OR = {
+                            has_character_flag = great_trip
+                            has_character_flag = good_trip
+                        }
+                    }
+                }
+                modifier = {
+                    factor = 2
+                    has_character_flag = great_trip
+                }
+                modifier = {
+                    factor = 2
+                    NOT = {
+                        learning = 8
+                    }
+                }
+                modifier = {
+                    factor = 2
+                    NOT = {
+                        learning = 15
+                    }
+                }
+                modifier = {
+                    factor = 0
+                    has_character_modifier = learning_insight
+                }
+                set_character_flag = gains_learning_insight_flag
+                character_event = { id = MNM.6817 days = 4 }
+            }
+            10 = { # Stewardship insight
+                modifier = {
+                    factor = 0
+                    NOT = {
+                        OR = {
+                            has_character_flag = great_trip
+                            has_character_flag = good_trip
+                        }
+                    }
+                }
+                modifier = {
+                    factor = 2
+                    has_character_flag = great_trip
+                }
+                modifier = {
+                    factor = 2
+                    NOT = {
+                        stewardship = 8
+                    }
+                }
+                modifier = {
+                    factor = 2
+                    NOT = {
+                        stewardship = 15
+                    }
+                }
+                modifier = {
+                    factor = 0
+                    has_character_modifier = stewardship_insight
+                }
+                set_character_flag = gains_stewardship_insight_flag
+                character_event = { id = MNM.6817 days = 4 }
+            }
+            10 = { #Cure your disease
+                modifier = {
+                    factor = 0
+                    NOT = { has_dlc = "Reapers" }
+                }
+                modifier = {
+                    factor = 0
+                    has_disease_trigger = no
+                }
+                modifier = {
+                    factor = 3
+                    has_character_flag = great_trip
+                }
+                character_event = { id = MNM.6818 days = 4 }
+            }
+        }
+        random = {
+            chance = 100
+
+            character_event = { id = PENTAGHAST.108 days = 30 } #Gives addiction
+
+            modifier = {
+                has_character_modifier = vir_sand_addict
+                factor = 0
+            }
+            modifier = {
+                has_character_modifier = vir_sand_timer
+                factor = 4
+            }           
+            modifier = {
+                trait = temperate 
+                factor = 0.9
+            }           
+        }
+
+        #Add drug timer based on dosage
+        if = {
+            limit = { has_character_flag = vir_sand_small_dose }
+            add_character_modifier = {
+                name = vir_sand_timer
+                hidden = yes
+                days = 365
+            }
+        }
+        if = {
+            limit = { 
+                NOR = {
+                    has_character_flag = vir_sand_small_dose 
+                    has_character_flag = vir_sand_big_dose
+                }
+            }
+            add_character_modifier = {
+                name = vir_sand_timer
+                hidden = yes
+                days = 600
+            }
+        }
+        if = {
+            limit = { has_character_flag = vir_sand_big_dose }
+            add_character_modifier = {
+                name = vir_sand_timer
+                hidden = yes
+                days = 900
+            }
+        }   
+
+        #Illness handling
+        random = {
+            chance = 5
+            give_cancer_effect = yes
+        }
+
+        #Removing flags
+        clr_character_flag = vir_sand_small_dose
+        clr_character_flag = vir_sand_big_dose
+    }
+}
+
+# PENTAGHAST.107 - Additional effects for consume vir sand
+character_event = {
+    id = PENTAGHAST.107
+    picture = GFX_evt_dark_prayer
+    border = GFX_event_normal_frame_religion
+
+    desc = {
+        trigger = { has_character_flag = great_trip }
+        text = EVTDESC_MNM_6802_GREAT
+        picture = GFX_evt_religious_exultation
+    }
+    desc = {
+        trigger = { has_character_flag = good_trip }
+        text = EVTDESC_MNM_6802_GOOD
+        picture = GFX_evt_dark_prayer
+    }
+    desc = {
+        trigger = { has_character_flag = bad_trip }
+        text = EVTDESC_MNM_6802_BAD
+        picture = GFX_evt_impalement
+    }
+
+    is_triggered_only = yes
+    
+    option = {
+        name = {
+            trigger = { has_character_flag = great_trip }
+            text = EVTOPTA_MNM_6802_GREAT
+        }
+        name = {
+            trigger = { has_character_flag = good_trip }
+            text = EVTOPTA_MNM_6802_GOOD
+        }
+        name = {
+            trigger = { has_character_flag = bad_trip }
+            text = EVTOPTA_MNM_6802_BAD
+        }
+
+        if = {
+            limit = { has_character_flag = great_trip }
+            if = {
+                limit = { has_character_modifier = astounding_visions }
+                remove_character_modifier = astounding_visions
+            }
+            if = {
+                limit = { has_character_modifier = uplifting_visions }
+                remove_character_modifier = uplifting_visions
+            }
+            if = {
+                limit = { has_character_modifier = frightening_visions }
+                remove_character_modifier = frightening_visions
+            }
+            add_character_modifier = {
+                name = astounding_visions
+                days = 365
+            }
+            clr_character_flag = great_trip
+        }
+        if = {
+            limit = { has_character_flag = good_trip }
+            if = {
+                limit = { has_character_modifier = astounding_visions }
+                remove_character_modifier = astounding_visions
+            }
+            if = {
+                limit = { has_character_modifier = uplifting_visions }
+                remove_character_modifier = uplifting_visions
+            }
+            if = {
+                limit = { has_character_modifier = frightening_visions }
+                remove_character_modifier = frightening_visions
+            }
+            add_character_modifier = {
+                name = uplifting_visions
+                days = 365
+            }
+            clr_character_flag = good_trip
+        }
+
+        if = {
+            limit = { has_character_flag = bad_trip }
+            if = {
+                limit = { has_character_modifier = astounding_visions }
+                remove_character_modifier = astounding_visions
+            }
+            if = {
+                limit = { has_character_modifier = uplifting_visions }
+                remove_character_modifier = uplifting_visions
+            }
+            if = {
+                limit = { has_character_modifier = frightening_visions }
+                remove_character_modifier = frightening_visions
+            }
+            add_character_modifier = {
+                name = frightening_visions
+                days = 365
+            }
+            clr_character_flag = bad_trip
+        }
+        clr_character_flag = assassins_taking_drugs
+    }
+}
+
+# PENTAGHAST.108 - CHARACTER IS ADDICT TO VIR SAND
+character_event = {
+    id = PENTAGHAST.108
+    desc = EVTDESC_PENTAGHAST_108
+    picture = GFX_evt_drunk
+    border = GFX_event_normal_frame_religion
+
+    trigger = { NOT = { has_character_modifier = vir_sand_addict } }
+
+    is_triggered_only = yes
+
+    option = {
+        name = EVTOPTA_MNM_6803
+        custom_tooltip = { text = EVTOPTA_6803_TOOLTIP }
+
+        add_character_modifier = {
+            name = vir_sand_addict
+            duration = -1
+        }
+    }
+}
+
+# PENTAGHAST.109 - CHARACTER DECIDES USE BOMB OF VIR
+character_event = {
+    id = PENTAGHAST.109
+    title = EVTTITLE_PENTAGHAST_109
+    desc = EVTDESC_PENTAGHAST_109
+    picture = GFX_evt_vir_bomb
+    border = GFX_event_normal_frame_religion
+    is_triggered_only = yes
+
+    option = {
+        name = "BURN_THEM_ALL"      
+        if = {
+            limit = {
+                is_ruler = yes
+                war = yes
+                OR = {
+                    is_primary_war_attacker = yes
+                    is_primary_war_defender = yes
+                    independent = yes
+                }
+            }
+            any_current_enemy = {
+                limit = { 
+                    at_location = ROOT
+                    in_command = yes
+                    prisoner = no
+                }
+                troops = -1
+                morale = -1
+                hidden_tooltip = { character_event = { id = PENTAGHAST.110 } }
+            }   
+            any_current_enemy = {
+                any_realm_character = {
+                    limit = {
+                        at_location = ROOT
+                        in_command = yes
+                        prisoner = no
+                    }
+                    troops = -1
+                    morale = -1
+                    hidden_tooltip = { character_event = { id = PENTAGHAST.110 } }                                      
+                }           
+            }
+            ROOT = {                
+                troops = -1
+                morale = -1
+                hidden_tooltip = { character_event = { id = PENTAGHAST.110 } }
+                any_realm_character = {
+                    limit = {
+                        at_location = ROOT
+                        in_command = yes
+                        prisoner = no
+                    }
+                    troops = -1
+                    morale = -1
+                    hidden_tooltip = { character_event = { id = PENTAGHAST.110 } }  
+                }
+            }           
+        }   
+        any_liege = {
+            limit = {
+                NOT = { character = ROOT }
+                war = yes
+                OR = {
+                    is_primary_war_attacker = yes
+                    is_primary_war_defender = yes
+                    independent = yes
+                }
+            }
+            any_current_enemy = {
+                limit = { 
+                    at_location = ROOT
+                    in_command = yes
+                    prisoner = no
+                    
+                }
+                troops = -1
+                morale = -1
+                hidden_tooltip = { character_event = { id = PENTAGHAST.110 } }      
+            }   
+            any_current_enemy = {
+                any_realm_character = {
+                    limit = { 
+                        at_location = ROOT
+                        in_command = yes
+                        prisoner = no
+                    }
+                    troops = -1
+                    morale = -1
+                    hidden_tooltip = { character_event = { id = PENTAGHAST.110 } }          
+                }           
+            }
+        }
+        #Devastate the province
+        location = { province_event = { id = PENTAGHAST.111 } }     
+    }
+}
+
+# PENTAGHAST.110 - CHARACTER DIES DUE BOMB OF VIR
+character_event = {
+    id = PENTAGHAST.110
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        death = {
+            death_reason = death_battle
+            killer = FROM
+        }
+    }
+}
+
+# PENTAGHAST.111 - THE BOMB DEVASTATE THE PROVINCE
+province_event = {
+    id = PENTAGHAST.111
+    desc = "EVTDESC_PENTAGHAST_111"
+    picture = "GFX_evt_vir_bomb"
+
+    is_triggered_only = yes
+
+    option = {
+        name = "OK"
+        add_province_modifier = {
+            name = burned3
+            duration = 1500
+        }       
+    }
+}

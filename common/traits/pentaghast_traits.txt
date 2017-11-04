@@ -1,0 +1,112 @@
+# Vee genetic traits. Inherits to all childrens. Only women are no recesive
+sharingan = {
+	intrigue = 5
+    customizer = no
+    opposites =  {
+		byakugan
+	}
+	opposite_opinion = -500
+}
+
+# Ra genetic traits. Inherits to all childrens. Only men are no recesive
+byakugan = {
+	martial = 5	
+	customizer = no
+	opposites =  {
+		sharingan
+	}
+	opposite_opinion = -500
+}
+
+rinnegan = {
+	customizer = no
+	martial = 30
+	intrigue = 30
+	ai_ambition = 500
+	cached = yes
+}
+
+blackfyre = {
+	monthly_character_prestige = 1.55
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger
+	immortal = yes
+}
+
+darksister = {
+	monthly_character_prestige = 1.55
+	customizer = no	
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger  
+}
+
+ak_cero = {
+	general_opinion = -10
+	customizer = no
+	martial = 1
+	combat_rating = 10
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger  
+}
+
+ak_azul = {
+	general_opinion = -10
+	customizer = no
+	martial = 1
+	combat_rating = 10
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger  
+}
+ak_blanco = {
+	general_opinion = -10
+	customizer = no
+	martial = 1
+	combat_rating = 10
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger  
+}
+ak_carmesi = {
+	general_opinion = -10
+	customizer = no
+	martial = 1
+	combat_rating = 10
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger  
+}
+ak_jabali = {
+	general_opinion = -10
+	customizer = no
+	martial = 1
+	combat_rating = 10
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger  
+}
+ak_cielo = {
+	general_opinion = -10
+	customizer = no
+	martial = 1
+	combat_rating = 10
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger  
+}
+ak_sur = {
+	general_opinion = -10
+	customizer = no
+	martial = 1
+	combat_rating = 10
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger  
+}
+ak_norte = {
+	general_opinion = -10
+	customizer = no
+	martial = 1
+	combat_rating = 10
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger  
+}
+ak_tres = {
+	general_opinion = -10
+	customizer = no
+	martial = 1
+	combat_rating = 10
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger  
+}
+ak_joya = {
+	general_opinion = -10
+	customizer = no
+	martial = 1
+	combat_rating = 10
+	cached = yes # Keep a cache of all trait holders, to use with the corresponding event trigger  
+}

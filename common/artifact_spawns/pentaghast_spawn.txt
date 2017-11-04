@@ -1,0 +1,22 @@
+leather_set = {
+    max_amount = 1
+    spawn_date = -1.1.1
+	
+	spawn_chance = {
+		value = 100		
+	}
+    
+    weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			character = 600002
+		}
+		
+	}
+    artifacts = {
+        leather_set = {
+            value = 1
+        }
+    }
+}

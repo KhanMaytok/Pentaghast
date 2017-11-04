@@ -1,0 +1,28 @@
+{
+  "name": "pentaghast",
+  "version": "3.0.0",
+  "description": "Mod for Crusader Kings II + Electron based editor",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "bin": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KhanMaytok/Pentaghast.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KhanMaytok/Pentaghast/issues"
+  },
+  "author": "Giancarlo Ventura <khan.maytok@gmail.com>",
+  "license": "MIT",
+  "standard": {
+    "env": {
+      "mocha": true
+    }
+  },
+  "pkg": {
+    "assets": [],
+    "targets": ["node6"]
+  }
+}

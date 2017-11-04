@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+			name = "GFX_evt_vir_bomb"
+			texturefile = "gfx\\event_pictures\\vir_bomb.tga"
+			allwaystransparent = yes
+	}
+}

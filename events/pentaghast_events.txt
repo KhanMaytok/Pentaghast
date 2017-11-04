@@ -1,0 +1,384 @@
+################################################
+#                                              #
+#                                              #
+# ID PENTAGHAST.100-PESC.9999                  #
+#                                              #
+# PENTAGHAST.99 = DETECT KONAN CHARACTER       #
+# PENTAGHAST.100 = SELECT CHARLEMAGNE          #
+# PENTAGHAST.101 = Charlemagne receives Senua  #
+# PENTAGHAST.102 = Born of Vee                 #
+# PENTAGHAST.104 = Give money every year to members of Pentaghast society
+#                                              #
+################################################
+
+
+namespace = PENTAGHAST
+
+#####################
+## PHASE 01 EVENTS ##
+#####################
+character_event = {
+    id = PENTAGHAST.99
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        year = 769
+        character = 600002 # Senua
+        NOT = {
+            has_character_flag = senua_flies
+        }       
+    }
+    
+    immediate = {
+        ROOT = {
+            set_character_flag = senua_flies
+            character_event = { id = PENTAGHAST.100 days = 3} # Flee to foreign court?          
+        }
+    }
+}
+
+# PENTAGHAST.100 - SELECT CHARLEMAGNE
+character_event = {
+    id = PENTAGHAST.100
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        random_independent_ruler = {
+            limit = { has_character_flag = is_charlemagne }
+            character_event = { id = PENTAGHAST.101 }
+        }
+    }
+}
+
+# PENTAGHAST.101 - Charlemagne receives Konan
+character_event = {
+    id = PENTAGHAST.101
+    desc = EVTDESC_PENTAGHAST_101
+    picture = GFX_evt_emissary
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_PENTAGHAST_101
+        ai_chance = { factor = 100 }
+        FROM = {
+            move_character = ROOT           
+        }
+        prestige = 10
+
+        FROM = {character_event = { id = PENTAGHAST.102 days = 266 } }
+        # FROM = {character_event = { id = PENTAGHAST.102 days = 266 } }
+    }
+}
+
+# PENTAGHAST.102 - Born of Vee and Khalga
+character_event = {
+    id = PENTAGHAST.102
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        character = 600002 #Konan
+        NOT = { has_character_flag = vee_spawned }
+    }
+    option = {
+        name = OK
+        set_character_flag = vee_spawned
+        # Vee Born
+        create_character = {
+            name = Vee
+            dna="vzzzzzzzzzz"
+            female = yes
+            age = 0
+        }
+        new_character = {
+            set_mother = ROOT
+            set_real_father = FROM
+            dynasty = ROOT
+            add_trait = fair
+            add_trait = twin
+            add_trait = genius
+            culture = samoyed
+            add_trait = sharingan
+            set_character_flag = is_vee
+            set_focus = focus_ch_heritage
+            wealth = 1000
+        }
+        # Khalga born
+        create_character = {
+            name = Khalga
+            dna="zeusjupiter"
+            age = 0
+        }
+        new_character = {
+            culture = samoyed
+            set_mother = ROOT
+            set_real_father = FROM
+            dynasty = ROOT
+            add_trait = fair
+            add_trait = twin
+            add_trait = genius
+            add_trait = byakugan
+            add_trait = strong
+            add_trait = immortal
+            set_character_flag = is_khalga
+            set_focus = focus_ch_heritage
+            wealth = 1000
+            set_character_flag = wolf_blood_first_generation
+            add_character_modifier = {
+                name = wolf_child
+                duration = -1
+            }
+        }
+        liege = { # Charlemagne is notified
+            character_event = { id = PENTAGHAST.103 days = 3 }          
+        }       
+    }
+}
+
+# Charlemagne notification
+character_event = {
+    id = PENTAGHAST.103
+    title = EVTTITLE_PENTAGHAST_103
+    desc = EVTDESC_PENTAGHAST_103
+    picture = GFX_evt_birth
+    border = GFX_event_normal_frame_intrigue
+    is_triggered_only = yes
+
+    option = {
+        name = OK
+        ROOT = {            
+            character_event = { id = PENTAGHAST.104 days = 15}
+        }       
+    }
+}
+
+
+# PENTAGHAST.112 - Khalga flyes
+character_event = {
+    id = PENTAGHAST.104
+    title = EVTTITLE_PENTAGHAST_112
+    desc = EVTDESC_PENTAGHAST_112
+    picture = GFX_evt_machines_of_war
+    border = GFX_event_normal_frame_intrigue
+    is_triggered_only = yes
+
+    immediate = {
+        ROOT = {
+            add_trait = stressed
+            random_courtier = {
+                limit = {
+                    AND = {
+                        NOT = { has_character_flag = is_khalga }
+                        NOT = { has_character_flag = is_vee }
+                        NOT = { hhas_character_flag = is_konan }
+                    }
+                }
+                death = { death_reason = death_murder_unknown_fall }
+            }            
+        }
+    }
+
+    option = {
+        name = EVTOPTA_PENTAGHAST_112
+        random_courtier = {
+            limit = { has_character_flag = is_khalga }
+            character_event = { id = PENTAGHAST.105 }
+        }
+    }
+}
+
+# PENTAGHAST.113 - SELECT BAGHATUR
+character_event = {
+    id = PENTAGHAST.105
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        random_independent_ruler = {
+            limit = { character = 74012 }
+            character_event = { id = PENTAGHAST.106 }
+        }
+    }
+}
+
+# PENTAGHAST.114 - BAGHATUR receives KHALGA
+character_event = {
+    id = PENTAGHAST.106
+    title = FIND_AITA
+    desc = EVTDESC_HL_1010
+    picture = GFX_evt_emissary
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = EVTOPTA_HL_1010
+        ai_chance = { factor = 100 }
+        FROM = {
+            move_character = ROOT           
+        }
+        prestige = 100
+        wealth = 100
+    }
+}
+
+# Vee begins to grow
+narrative_event = {
+    id = PENTAGHAST.1704
+    title = EVTTITLE_PENTAGHAST.1704
+    desc = EVTDESC_PENTAGHAST.1704
+    picture = GFX_evt_whispers
+    border = GFX_event_narrative_frame_war
+
+    is_triggered_only = yes
+    
+    has_character_flag = is_vee
+    capable_only = yes  
+    
+    trigger = {
+        age = 13
+        OR = {
+            OR = {
+                ai = no             
+            }
+            father = { ai = no }
+            mother = { ai = no }
+        }
+        NOT = { has_character_flag = vee_spawn_rumors }
+    }
+    
+    option = {
+        name = EVTOPTA_PENTAGHAST.1704
+        set_character_flag = vee_spawn_rumors
+        hidden_tooltip = {
+            father = { narrative_event = { id = PENTAGHAST.1705 } }
+            mother = { narrative_event = { id = PENTAGHAST.1705 } }
+        }
+        prestige = 20
+        if = {
+            limit = { NOT = { trait = proud } }
+            random = {
+                chance = 30
+                add_trait = proud
+                hidden_tooltip = {
+                    character_event = {
+                        id = 38261 #Notify Proud
+                    }
+                }
+            }
+        }
+    }
+}
+
+# PARENTS HEARS VEE IS GROWING
+narrative_event = {
+    id = PENTAGHAST.1705
+    title = EVTTITLE_PENTAGHAST.1705
+    desc = EVTDESC_PENTAGHAST.1705
+    picture = GFX_evt_whispers
+    border = GFX_event_narrative_frame_war
+
+    is_triggered_only = yes
+    capable_only = yes
+
+    option = {
+        name = EVTOPTA_PENTAGHAST.1705          # Accept gossip
+        reverse_opinion = {
+            who = FROM
+            modifier = opinion_approves
+            years = 3
+        }
+    }   
+}
+
+### Select a friend to get The Mangekyo ###
+character_event = {
+    id = PENTAGHAST.1706
+    desc = EVTDESC100000
+    picture = GFX_evt_child_sword
+
+    is_triggered_only = yes
+    
+    min_age = 4
+    max_age = 14
+    only_capable = yes
+    prisoner = no
+    
+    trigger = {
+        trait = sharingan
+        NOT = {
+            num_of_friends = 2
+        }
+        NOT = {
+            num_of_rivals = 2
+        }       
+
+        host = {
+            any_courtier = {
+                is_abroad = no
+                prisoner = no
+                at_location = ROOT
+
+                age = 4
+                NOT = {
+                    age = 14
+                }
+                NOT = {
+                    num_of_friends = 2
+                }
+                NOT = {
+                    num_of_rivals = 2
+                }
+                NOT = {
+                    is_friend = ROOT
+                }
+                NOT = {
+                    is_rival = ROOT
+                }
+            }
+        }
+    }
+
+    immediate = {
+        host = {
+            random_courtier = {
+                limit = {
+                    is_abroad = no
+                    prisoner = no
+                    at_location = ROOT                  
+                    
+                    age = 4
+                    NOT = {
+                        age = 14
+                    }
+                    NOT = {
+                        num_of_friends = 2
+                    }
+                    NOT = {
+                        num_of_rivals = 2
+                    }
+                    NOT = {
+                        is_friend = ROOT
+                    }
+                    NOT = {
+                        is_rival = ROOT
+                    }
+                }
+                save_event_target_as = troublemaker_child
+            }
+        }
+    }   
+    
+    option = {
+        name = EVTOPTB100000
+        event_target:troublemaker_child = {
+            add_friend = ROOT
+            character_event = {
+                id = 100002
+                tooltip = EVTTOOLTIP100002
+            }
+        }
+    }
+}

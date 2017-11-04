@@ -1,0 +1,44 @@
+has_valyrian_steel_sword_trigger = {
+	custom_tooltip = {
+		text = has_valyrian_steel_sword_trigger
+		hidden_tooltip = {
+			OR = {
+				trait = blackfyre				
+		}	
+	}	
+}
+
+has_pentaghast_society_prerequisites = {
+	age = 16
+	custom_tooltip = {
+		text = must_be_high_society_candidate
+		hidden_tooltip = {
+			OR = {
+				trait = genius
+				trait = ambitious
+				trait = intricate_webweaver
+				trait = elusive_shadow
+				trait = quick
+				trait = cynical
+				trait = shrewd
+				trait = scholar
+				trait = impaler
+				trait = seducer
+				trait = seductress
+				trait = strategist
+				trait = ambitious
+				trait = brave
+				trait = strong
+				trait = robust
+			}
+			NOT = {	trait = decadent }
+			NOT = {	trait = imbecile }
+			NOT = {	trait = dull }
+			NOT = {	trait = craven }
+			NOT = {	trait = stubborn }
+			NOT = {	trait = trusting }
+			NOT = {	trait = slothful }
+			NOT = {	trait = zealous }
+		}
+	}
+}

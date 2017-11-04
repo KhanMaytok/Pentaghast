@@ -1,0 +1,194 @@
+# Force join AI characters to societies
+namespace = PENTAGHAST
+
+character_event = {
+	id = PENTAGHAST.10030
+	hide_window = yes
+	
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	has_dlc = "Mystics"
+	
+	immediate = {
+		if = {
+			limit = {
+				ai = yes
+				prisoner = no
+				NOT = { trait = incapable }
+				is_in_society = yes
+				society_rank < 3
+				society_can_rank_up = yes
+			}
+			random_list = {
+				75 = {}
+				25 = {
+					society_rank_up = 1					
+				}
+			}
+		}
+		any_courtier = {
+			limit = {
+				ai = yes
+				prisoner = no
+				NOT = { trait = incapable }
+				is_adult = yes
+				is_in_society = no
+				controls_religion = no
+				block_general_event_trigger = no
+			}
+			character_event = { id = PENTAGHAST.10031 }
+		}
+		if = {
+			limit = {
+				ai = yes
+				prisoner = no
+				NOT = { trait = incapable }
+				is_adult = yes
+				is_in_society = no
+				controls_religion = no
+				block_general_event_trigger = no
+			}
+			character_event = { id = PENTAGHAST.10031 }
+		}
+	}
+}
+
+character_event = {
+	id = PENTAGHAST.10031
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		random_list = {
+			95 = { # do nothing
+			}
+			5 = { # try to join a society
+				modifier = {
+					factor = 2
+					higher_tier_than = BARON
+				}
+				
+				random_list = {
+					700 = { } # Fall back dead weight
+					100 = {
+						trigger = {
+							can_join_society = noldor_society
+						}
+						modifier = {
+							factor = 3
+							OR = {
+								trait = genius
+								trait = ambitious
+								trait = intricate_webweaver
+								trait = elusive_shadow
+								trait = quick
+								trait = cynical
+								trait = shrewd
+								trait = scholar
+								trait = impaler
+								trait = seducer
+								trait = seductress
+								trait = strategist
+								trait = ambitious
+								trait = brave
+							}
+							NOT = {	trait = decadent }
+							NOT = {	trait = imbecile }
+							NOT = {	trait = dull }
+							NOT = {	trait = craven }
+							NOT = {	trait = stubborn }
+							NOT = {	trait = trusting }
+							NOT = {	trait = slothful }
+							NOT = {	trait = zealous }
+						}
+						join_society = noldor_society
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+					100 = {
+						trigger = {
+							can_join_society = pentaghast_society
+						}
+						modifier = {
+							factor = 3
+							OR = {
+								trait = genius
+								trait = ambitious
+								trait = intricate_webweaver
+								trait = elusive_shadow
+								trait = quick
+								trait = cynical
+								trait = shrewd
+								trait = scholar
+								trait = impaler
+								trait = seducer
+								trait = seductress
+								trait = strategist
+								trait = ambitious
+								trait = brave
+							}
+							NOT = {	trait = decadent }
+							NOT = {	trait = imbecile }
+							NOT = {	trait = dull }
+							NOT = {	trait = craven }
+							NOT = {	trait = stubborn }
+							NOT = {	trait = trusting }
+							NOT = {	trait = slothful }
+							NOT = {	trait = zealous }
+						}
+						join_society = pentaghast_society
+						random_list = { # Artificially increase society influence for balance purposes
+							75 = {
+								modifier = {
+									factor = 0
+								}
+								modifier = {
+									factor = 0
+									society_influence >= 30
+								}
+								add_mission_succeed_influence_effect = yes
+							}
+							25 = {
+							}
+						}
+						if = {
+							limit = {
+								NOT = {
+									society = {
+										any_society_member = {
+											is_society_grandmaster = yes
+										}
+									}
+								}
+							}
+							set_society_grandmaster = yes
+						}
+					}
+				}
+			}
+		}
+	}
+}

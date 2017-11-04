@@ -1,0 +1,11 @@
+300000={
+	used_for_random=no
+	name="Pentaghast" 
+	culture="norse"
+	religion="norse_pagan"
+	coat_of_arms=
+    {
+        data= {0 0 0 32 3 5 9}
+        religion="norse_pagan"
+    }
+}

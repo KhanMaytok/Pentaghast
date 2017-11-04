@@ -1,0 +1,91 @@
+spriteTypes = {
+	##### The Pentaghast Society #####	
+	spriteType = {
+		name = "GFX_society_main_background_pentaghast_society"
+		texturefile = "gfx\\interface\\societies\\society_bg_devil_worshiper.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_society_expansion_background_pentaghast_society"
+		texturefile = "gfx\\interface\\societies\\society_exp_bg_devil_worshiper.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_small_pentaghast_society"
+		texturefile = "gfx\\interface\\societies\\symbol_small_devil_worshiper.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_society_influence_pentaghast_society"
+		texturefile = "gfx\\interface\\societies\\society_influence_devil_worshipers.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_society_portrait_ring_pentaghast_society"
+		texturefile = "gfx\\interface\\societies\\portrait_ring_devil_worshipers.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_society_portrait_ring_small_pentaghast_society"
+		texturefile = "gfx\\interface\\societies\\portrait_ring_small_devil_worshipers.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_society_currency_pentaghast_society"
+		texturefile = "gfx\\interface\\societies\\society_currency_devil_worshipers.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_pentaghast_society_ranks"
+		texturefile = "gfx\\interface\\societies\\rank_icons_devils.dds"
+		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_pentaghast_vir_effect"
+		texturefile = "gfx\\interface\\decision_icon_conscript_merchant_ships.dds"
+	}
+
+	spriteType = {
+		name = "GFX_pentaghast_vir_bomb"
+		texturefile = "gfx\\interface\\decision_icon_conscript_merchant_ships.dds"
+	}
+
+	#### THE NOLDORS
+	spriteType = {
+		name = "GFX_society_main_background_noldor_society"
+		texturefile = "gfx\\interface\\societies\\society_bg_assassins.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_society_expansion_background_noldor_society"
+		texturefile = "gfx\\interface\\societies\\society_exp_bg_assassins.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_small_noldor_society"
+		texturefile = "gfx\\interface\\societies\\symbol_small_the_assassins.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_society_influence_noldor_society"
+		texturefile = "gfx\\interface\\societies\\society_influence_the_assassins.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_society_portrait_noldor_society"
+		texturefile = "gfx\\interface\\societies\\portrait_ring_the_assassins.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_society_portrait_ring_small_noldor_society"
+		texturefile = "gfx\\interface\\societies\\portrait_ring_small_the_assassins.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_society_currency_noldor_society"
+		texturefile = "gfx\\interface\\societies\\society_currency_the_assassins.dds"
+	}
+}

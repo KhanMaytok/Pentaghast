@@ -1,0 +1,10 @@
+vir_sand_addict = {
+	is_visible = { 
+		OR = {
+			society_member_of = pentagast_society 
+			character = FROM
+		}
+	}
+	icon = 88
+	diplomacy = -2
+}

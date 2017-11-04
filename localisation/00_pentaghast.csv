@@ -1,0 +1,124 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+sharingan;Rama Loki;Rama Loki;Rama Loki;;Rama Loki;;;;;;;;;x
+byakugan;Rama Fenrir;Rama Fenrir;Rama Fenrir;;Rama Fenrir;;;;;;;;;x
+sharingan_desc;Rama Fenrir;Rama Fenrir;Rama Fenrir;;La rama Loki de los Pentaghast es descendiente por la lï¿½nea femenina de Vee. Este rasgo genï¿½tico solo se hereda a travï¿½s de las madres. Garantiza que se esté preparado para la intriga;;;;;;;;;x
+byakugan_desc;Rama Fenrir;Rama Fenrir;Rama Fenrir;;La rama Loki de los Pentaghast es descendiente por la línea paterna de Aita. Este rasgo genético solo se hereda a través de los padres. Garantiza que se esté preparado para la guerra;;;;;;;;;x
+k_pentaghast;;;;;;;;;;;;;;x
+odin;;;;;El ojo de la eternidad;;;;;;;;;x
+odin_desc;;;;;Los ojos de esta persona tienen un llamativo patrón. Este ojo surge de la combinación de padres de la rama Loki y la rama Fenrir.;;;;;;;;;x
+FIND_VEE;;;;;Vee hallada;;;;;;;;;x
+FIND_AITA;;;;;Khalga hallado;;;;;;;;;x
+##############
+## RELIGION ##
+##############
+pentaghast_group;;;;;Adoración a la diosa Madre;;;;;;;;;x
+pentaghast;;;;;La religión Pentaghast;;;;;;;;;x
+pentaghast_DESC;;;;;Los Pentaghast adoran a una extraña mezcla de variadas religiones, formando un extraño culto incomprensible a las demás personas;;;;;;;;;x
+
+GOD_VEE;;;;;La Gran Diosa Madre;;;;;;;;;x
+GOD_FENRIR;;;;;El dios sin ojos;;;;;;;;;x
+
+############
+## TRAITS ##
+############
+ak_cero;;;;;Anillo raro;;;;;;;;;x
+ak_cero_desc;;;;;Un anillo con la inscripción "Cero" sobre él;;;;;;;;;x
+ak_joya;;;;;Anillo raro;;;;;;;;;x
+ak_joya_desc;;;;;Un anillo con la inscripción "Joya" sobre él;;;;;;;;;x
+ak_blanco;;;;;Anillo raro;;;;;;;;;x
+ak_blanco_desc;;;;;Un anillo con la inscripción "Blanco" sobre él;;;;;;;;;x
+darksister;;;;;Freya;;;;;;;;;x
+darksister_desc;;;;;La espada Freya, una reliquia sagrada de tiempos antiguos;;;;;;;;;x
+blackfyre;;;;;Fuego Oscuro;;;;;;;;;x
+blackfyre_desc;;;;;La espada Fuego Oscuro, una reliquia sagrada de tiempos antiguos;;;;;;;;;x
+
+
+
+
+EVTDESC250277;;;;;Has heredado de [Root.GetTitledFirstName] su famosa espada, úsala con honor;;;;;;;;;x
+EVTDESC250277B;;;;;Has heredado de [Root.GetTitledFirstName] su famosa espada, úsala con honor;;;;;;;;;x
+EVTOPTA250277;It shall be done;Il en sera ainsi;;;Así será;;;;;;;;;x
+
+# VEE LIFE
+
+EVTTITLE_PENTAGHAST.1705;;;;;[Root.GetSonDaughter] está creciendo;;;;;;;;;x
+EVTDESC_PENTAGHAST.1705;;;;;Tu hija está creciendo y pronto comienza a despertar la atenciï¿½n de la corte.\nPosee una extraï¿½a y singular belleza a la que nadie muestra indiferencia. Sin duda serï¿½ una de las mujeres mï¿½s bellas del mundo;;;;;;;;;x
+EVTOPTA_PENTAGHAST.1705;;;;;Siento mucho orgullo de mi hija;;;;;;;;;x
+
+EVTTITLE_PENTAGHAST.1704;;;;;Estoy creciendo;;;;;;;;;x
+EVTDESC_PENTAGHAST.1704;;;;;Siento las miradas de todos en mí. Las personas se ruborizan en mi presencia y los chicos buscan mi compañía. Las damas de la corte siempre me otorgan regalos y dulces.;;;;;;;;;x
+EVTOPTA_PENTAGHAST.1704;;;;;¡Soy preciosa!;;;;;;;;;x
+
+# SOCIETIES
+must_be_high_society_candidate;;;;;Debe sobresalir por sobre el resto;;;;;;;;;x
+has_pentaghast_society_prerequisites;;;;;Debe cumplir requisitos para las dos sociedades antiguas;;;;;;;;;x
+pentaghast_society;;;;;Los Pentaghast;;;;;;;;;x
+pentaghast_society_desc;;;;;Esta sociedad secreta es tan hermética que muchos dudan de su existencia.\nSus objetivos nunca han sido claros y solo se han confirmado algunos miembros aislados a lo largo del tiempo. Se aconseja tener prudencia al tratar siquiera de obtener noticias de ésta o incluso mencionar su nombre en voz alta.;;;;;;;;;x
+pentaghast_society_rank_4_male;;;;;Supremo Líder;;;;;;;;;x
+pentaghast_society_rank_4_female;;;;;Suprema Líder;;;;;;;;;x
+pentaghast_society_rank_3_male;;;;;Gran caballero;;;;;;;;;x
+pentaghast_society_rank_3_female;;;;;Gran dama;;;;;;;;;x
+pentaghast_society_rank_2_male;;;;;Acólito oscuro;;;;;;;;;x
+pentaghast_society_rank_2_female;;;;;Acólito oscura;;;;;;;;;x
+pentaghast_society_rank_1_male;;;;;Iniciado;;;;;;;;;x
+pentaghast_society_rank_1_female;;;;;Iniciada;;;;;;;;;x
+currency_name_pentaghast_society;;;;;Poder;;;;;;;;;x
+
+noldor_society;;;;;Los Noldor;;;;;;;;;x
+noldor_society_desc;;;;;Esta sociedad secreta es tan hermética que muchos dudan de su existencia.\nSus objetivos nunca han sido claros y solo se han confirmado algunos miembros aislados a lo largo del tiempo. Se aconseja tener prudencia al tratar siquiera de obtener noticias de ésta o incluso mencionar su nombre en voz alta.;;;;;;;;;x
+noldor_society_rank_4_male;;;;;Supremo Líder;;;;;;;;;x
+noldor_society_rank_4_female;;;;;Suprema Líder;;;;;;;;;x
+noldor_society_rank_3_male;;;;;Gran caballero;;;;;;;;;x
+noldor_society_rank_3_female;;;;;Gran dama;;;;;;;;;x
+noldor_society_rank_2_male;;;;;Acólito oscuro;;;;;;;;;x
+noldor_society_rank_2_female;;;;;Acólito oscura;;;;;;;;;x
+noldor_society_rank_1_male;;;;;Iniciado;;;;;;;;;x
+noldor_society_rank_1_female;;;;;Iniciada;;;;;;;;;x
+currency_name_noldor_society;;;;;Poder;;;;;;;;;x
+
+
+venom_vir_effect;;;;;Experimentar con la Arena de Vir;;;;;;;;;x
+venom_vir_effect_desc;;;;;Consume Arena de Vir, una misteriosa sustancia solo revelada a los primeros escalones de la Orden Pentaghast. Potencia fuertemente las habilidades de una persona, pero quizá pueda traer consecuencias a largo plazo...;;;;;;;;;x
+venom_vir_effect_power_desc;;;;;Activa la decisión usar Arena de Vir a cambio de [Root.Society.GetCurrency].;;;;;;;;;x
+venom_vir_effect_tt;;;;;Toma una dosis de arena de vir.;;;;;;;;;x
+pentaghast_vir_bomb;;;;;Detonar la bomba de Vir;;;;;;;;;x
+pentaghast_vir_bomb_desc;;;;;Detona una bomba de Vir en el campo de batalla. Absolutamente TODOS los participantes morirán;;;;;;;;;x
+pentaghast_vir_bomb_power_desc;;;;;Activa la decisión detonar bomba de Vir a cambio de [Root.Society.GetCurrency].;;;;;;;;;x
+
+
+OK;;;;;OK;;;;;;;;;x
+BURN_THEM_ALL;;;;;Que arda el mundo;;;;;;;;;x
+EVTDESC_PENTAGHAST_101;;;;;Mientras dabas un paseo a caballo por el pueblo que rodea tu castillo, una mujer de extrañas facciones se presenta ante ti, interrumpiendo tu marcha. Jamás habías visto un ser tan bello. Ruega tu protección, pues dice ser perseguida por un malvado conde de tierras lejanas.;;;;;;;;;x
+EVTOPTA_PENTAGHAST_101;;;;;Bien puede quedarse en mi corte;;;;;;;;;x
+EVTTITLE_PENTAGHAST_103;;;;;Nueva visa;;;;;;;;;x
+EVTDESC_PENTAGHAST_103;;;;;La recién llegada ha alumbrado gemelos. En mi mente aun vagan pensamientos como mariposas en primavera acerca de la noche donde Konan y yo compartimos una velada que se desdibuja bajo la niebla del vino. ¿Qué pasó aquella noche? Konan no me ha dicho nada ni yo quiero preguntárselo. En la corte, todos parecen mirarla con recelos, pero a ella no le importa. Su belleza irreal se impone sobre todos quienes la rodean.;;;;;;;;;x
+EVTDESC_PENTAGHAST_108;;;;;Hace semanas que no uso arena de Vir para abrir la mente, pero sigo rememorando la experiencia con frecuencia. Me cuesta olvidar lo que he visto y ansío probar la droga otra vez.;;;;;;;;;x
+EVTTITLE_PENTAGHAST_109;;;;;La bomba de vir;;;;;;;;;x
+EVTDESC_PENTAGHAST_109;;;;;La bomba de Vir es una de las aplicaciones más poderosas y destructivas de aquel. Ataca a todos los organismos vivos y vaporiza ropa, carne, hueso e incluso piedra dentro del radio de la bomba. Se dice también que la bomba de Vir absorbe las almas de sus víctimas en una esfera de energía maligna, donde quedan atrapadas en un orbe de tormento oscuro hasta el fin del tiempo;;;;;;;;;x
+PENTAGHAST_109_tt;;;;;Usar la bomba de Vir para aplastar a todos en el campo de batalla;;;;;;;;;x
+EVTDESC_PENTAGHAST_111;;;;;Un evento inesperado ha devastado la tierra. Los edificios han sido destruidos en un abrir y cerrar de ojos, los árboles han sido arrancados de cuajo y solo queda devastación y cenizas, como si una tormenta de fuego hubiese arrasado con todo.;;;;;;;;;x
+EVTTITLE_PENTAGHAST_112;;;;;Tragedia;;;;;;;;;x
+EVTDESC_PENTAGHAST_112;;;;;En medio de la noche, un incendio arrasa una de las alas del palacio. En la confusión general, ¡el pequeño hijo de Konan ha resultado perdido!  La pérdida es sensible para mí, el muchacho era fuerte y quizá era mi hijo;;;;;;;;;x
+EVTOPTA_PENTAGHAST_112;;;;;Me siento deprimido;;;;;;;;;x
+
+EVTDESC_PENTAGHAST_115;;;;;Esta noche voy a cenar —y a beber— con [pentaghast_society_recruiter.GetTitledName]. Es un plan encantador, aunque lo que más me atrae de la idea es la compañía. ¿Por qué si no iba a continuar una conversación que empezaba a abordar temas místicos, como en teorías no oficiales sobre los orígenes del mundo y los poderes ocultos que yacen bajo él?;;;;;;;;;x
+EVTOPTA_PENTAGHAST_115;;;;;Cuéntame más acerca de esa tal Vee;;;;;;;;;x
+
+EVTDESC_PENTAGHAST_119;;;;;Mientras daba un paseo con [pentaghast_society_recruiter.GetTitledFirstName] por la empalizada me he dado cuenta de que estoy de acuerdo con muchas de las ideas que me plantea, ssobre todo en que la historia puede ser manipulada y debe haber algo más alláde todo lo que nos cuentan. De repente, se me ha acercado y me ha dado un extraño zurrón de cuero. "Lee esto y comprenderás muchas de las cosas que yacen ocultas a nuestros propios ojos";;;;;;;;;x
+
+
+###############
+## MODIFIERS ##
+###############
+
+vir_sand_addict;;;;;Adicto a la arena de Vir;;;;;;;;;x
+vir_sand_addict_desc;;;;;Tras consumir Arena de Vir, esta persona ha desarrollado una fuerte dependencia. Se ha vuelto un tanto irascible y distante;;;;;;;;;x
+
+###############
+## ARTIFACTS ##
+###############
+
+leather_set;;;;;Armadura de cuero;;;;;;;;;x
+leather_set_small;;;;;Esta armadura de cuero posee mucho más dureza y durabilidad que cualquier otra. Su superficie está orlada con intrincados diseños arcaicos repujados con mimo y detalle, esparcidos en toda su extensión. Sin duda, una pieza bella y funcional para el campo de batalla y los torneos.;;;;;;;;;x
+shinning_scepter;;;;;Shinning scepter;;;;;;;;;x
+shinning_scepter_desc;;;;;Este cetro que puede ser usado en el combate acompaña perfectamente a la armadura Glorious. Una vez activado por completo, refleja brillante un trozo de la gloria del mismo Sol;;;;;;;;;x

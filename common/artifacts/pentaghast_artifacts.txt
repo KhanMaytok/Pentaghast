@@ -1,0 +1,34 @@
+## Armors
+## BK sets
+leather_set = {
+    monthly_character_prestige = 0.5
+    quality = 1
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+battle_scepter = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    quality = 1
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_battle_scepter"
+    slot = ceremonial_weapon
+}
+
+shinning_scepter = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_shinning_scepter"
+    slot = ceremonial_weapon
+}

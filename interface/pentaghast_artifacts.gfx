@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_battle_scepter"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\battle_scepter.dds"
+	}
+	spriteType = {
+		name = "GFX_battle_scepter_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\battle_scepter_small.dds"
+	}
+	spriteType = {
+		name = "GFX_shinning_scepter"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\shinning_scepter.dds"
+	}
+	spriteType = {
+		name = "GFX_shinning_scepter_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\shinning_scepter_small.dds"
+	}
+	spriteType = {
+		name = "GFX_leather_set"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\leather_set.dds"
+	}
+	spriteType = {
+		name = "GFX_leather_set_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\leather_set_small.dds"
+	}	
+}
