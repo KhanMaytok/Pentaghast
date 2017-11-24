@@ -18,9 +18,8 @@ on_yearly_pulse = {
 #}
 
 
-on_birth = {
-	events = {
-		HOUSES.1 # Inherits sharingan
-		HOUSES.2 # Inherits byakugan
-	}	
-}
+#on_birth = {
+	#events = {
+		#HOUSES.1 # Inherits sharingan - byakugan
+	#}	
+#}

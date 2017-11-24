@@ -3,6 +3,7 @@ sharingan = {
     intrigue = 5
     combat_rating = 2
     customizer = no
+    enatic = yes
     opposites =  {
         byakugan
     }
@@ -14,6 +15,7 @@ byakugan = {
     martial = 5
     combat_rating = 2
     customizer = no
+    agnatic = yes
     opposites =  {
         sharingan
     }
