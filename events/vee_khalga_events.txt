@@ -1,24 +1,23 @@
 ################################################
+# Events related to Khalga and Vee life        #
 #                                              #
 #                                              #
-# ID PENTAGHAST.100-PESC.9999                  #
-#                                              #
-# PENTAGHAST.99 = DETECT KONAN CHARACTER       #
-# PENTAGHAST.100 = SELECT CHARLEMAGNE          #
-# PENTAGHAST.101 = Charlemagne receives Senua  #
-# PENTAGHAST.102 = Born of Vee                 #
-# PENTAGHAST.104 = Give money every year to members of Pentaghast society
+# KHAVEE.99 = DETECT KONAN CHARACTER           #
+# KHAVEE.100 = SELECT CHARLEMAGNE              #
+# KHAVEE.101 = Charlemagne receives Senua      #
+# KHAVEE.102 = Born of Vee                     #
+# KHAVEE.104 = Give money every year to members of Pentaghast society
 #                                              #
 ################################################
 
 
-namespace = PENTAGHAST
+namespace = KHAVEE
 
 #####################
 ## PHASE 01 EVENTS ##
 #####################
 character_event = {
-    id = PENTAGHAST.99
+    id = KHAVEE.99
     hide_window = yes
     is_triggered_only = yes
 
@@ -33,28 +32,28 @@ character_event = {
     immediate = {
         ROOT = {
             set_character_flag = senua_flies
-            character_event = { id = PENTAGHAST.100 days = 3} # Flee to foreign court?          
+            character_event = { id = KHAVEE.100 days = 3} # Flee to foreign court?          
         }
     }
 }
 
-# PENTAGHAST.100 - SELECT CHARLEMAGNE
+# KHAVEE.100 - SELECT CHARLEMAGNE
 character_event = {
-    id = PENTAGHAST.100
+    id = KHAVEE.100
     hide_window = yes
     is_triggered_only = yes
 
     immediate = {
         random_independent_ruler = {
             limit = { has_character_flag = is_charlemagne }
-            character_event = { id = PENTAGHAST.101 }
+            character_event = { id = KHAVEE.101 }
         }
     }
 }
 
-# PENTAGHAST.101 - Charlemagne receives Konan
+# KHAVEE.101 - Charlemagne receives Konan
 character_event = {
-    id = PENTAGHAST.101
+    id = KHAVEE.101
     desc = EVTDESC_PENTAGHAST_101
     picture = GFX_evt_emissary
     
@@ -68,14 +67,14 @@ character_event = {
         }
         prestige = 10
 
-        FROM = {character_event = { id = PENTAGHAST.102 days = 266 } }
-        # FROM = {character_event = { id = PENTAGHAST.102 days = 266 } }
+        FROM = {character_event = { id = KHAVEE.102 days = 266 } }
+        # FROM = {character_event = { id = KHAVEE.102 days = 2 } }
     }
 }
 
-# PENTAGHAST.102 - Born of Vee and Khalga
+# KHAVEE.102 - Born of Vee and Khalga
 character_event = {
-    id = PENTAGHAST.102
+    id = KHAVEE.102
     hide_window = yes
     is_triggered_only = yes
 
@@ -133,14 +132,14 @@ character_event = {
             }
         }
         liege = { # Charlemagne is notified
-            character_event = { id = PENTAGHAST.103 days = 3 }          
+            character_event = { id = KHAVEE.103 days = 3 }          
         }       
     }
 }
 
 # Charlemagne notification
 character_event = {
-    id = PENTAGHAST.103
+    id = KHAVEE.103
     title = EVTTITLE_PENTAGHAST_103
     desc = EVTDESC_PENTAGHAST_103
     picture = GFX_evt_birth
@@ -150,15 +149,15 @@ character_event = {
     option = {
         name = OK
         ROOT = {            
-            character_event = { id = PENTAGHAST.104 days = 15}
+            character_event = { id = KHAVEE.104 days = 15}
         }       
     }
 }
 
 
-# PENTAGHAST.112 - Khalga flyes
+# KHAVEE.112 - Khalga flyes
 character_event = {
-    id = PENTAGHAST.104
+    id = KHAVEE.104
     title = EVTTITLE_PENTAGHAST_112
     desc = EVTDESC_PENTAGHAST_112
     picture = GFX_evt_machines_of_war
@@ -173,7 +172,7 @@ character_event = {
                     AND = {
                         NOT = { has_character_flag = is_khalga }
                         NOT = { has_character_flag = is_vee }
-                        NOT = { hhas_character_flag = is_konan }
+                        NOT = { has_character_flag = is_konan }
                     }
                 }
                 death = { death_reason = death_murder_unknown_fall }
@@ -185,28 +184,28 @@ character_event = {
         name = EVTOPTA_PENTAGHAST_112
         random_courtier = {
             limit = { has_character_flag = is_khalga }
-            character_event = { id = PENTAGHAST.105 }
+            character_event = { id = KHAVEE.105 }
         }
     }
 }
 
-# PENTAGHAST.113 - SELECT BAGHATUR
+# KHAVEE.113 - SELECT BAGHATUR
 character_event = {
-    id = PENTAGHAST.105
+    id = KHAVEE.105
     hide_window = yes
     is_triggered_only = yes
 
     immediate = {
         random_independent_ruler = {
             limit = { character = 74012 }
-            character_event = { id = PENTAGHAST.106 }
+            character_event = { id = KHAVEE.106 }
         }
     }
 }
 
-# PENTAGHAST.114 - BAGHATUR receives KHALGA
+# KHAVEE.114 - BAGHATUR receives KHALGA
 character_event = {
-    id = PENTAGHAST.106
+    id = KHAVEE.106
     title = FIND_AITA
     desc = EVTDESC_HL_1010
     picture = GFX_evt_emissary
@@ -226,9 +225,9 @@ character_event = {
 
 # Vee begins to grow
 narrative_event = {
-    id = PENTAGHAST.1704
-    title = EVTTITLE_PENTAGHAST.1704
-    desc = EVTDESC_PENTAGHAST.1704
+    id = KHAVEE.1704
+    title = EVTTITLE_KHAVEE.1704
+    desc = EVTDESC_KHAVEE.1704
     picture = GFX_evt_whispers
     border = GFX_event_narrative_frame_war
 
@@ -250,11 +249,11 @@ narrative_event = {
     }
     
     option = {
-        name = EVTOPTA_PENTAGHAST.1704
+        name = EVTOPTA_KHAVEE.1704
         set_character_flag = vee_spawn_rumors
         hidden_tooltip = {
-            father = { narrative_event = { id = PENTAGHAST.1705 } }
-            mother = { narrative_event = { id = PENTAGHAST.1705 } }
+            father = { narrative_event = { id = KHAVEE.1705 } }
+            mother = { narrative_event = { id = KHAVEE.1705 } }
         }
         prestige = 20
         if = {
@@ -274,9 +273,9 @@ narrative_event = {
 
 # PARENTS HEARS VEE IS GROWING
 narrative_event = {
-    id = PENTAGHAST.1705
-    title = EVTTITLE_PENTAGHAST.1705
-    desc = EVTDESC_PENTAGHAST.1705
+    id = KHAVEE.1705
+    title = EVTTITLE_KHAVEE.1705
+    desc = EVTDESC_KHAVEE.1705
     picture = GFX_evt_whispers
     border = GFX_event_narrative_frame_war
 
@@ -284,7 +283,7 @@ narrative_event = {
     capable_only = yes
 
     option = {
-        name = EVTOPTA_PENTAGHAST.1705          # Accept gossip
+        name = EVTOPTA_KHAVEE.1705          # Accept gossip
         reverse_opinion = {
             who = FROM
             modifier = opinion_approves
@@ -295,7 +294,7 @@ narrative_event = {
 
 ### Select a friend to get The Mangekyo ###
 character_event = {
-    id = PENTAGHAST.1706
+    id = KHAVEE.1706
     desc = EVTDESC100000
     picture = GFX_evt_child_sword
 

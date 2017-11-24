@@ -1,11 +1,11 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 sharingan;Rama Loki;Rama Loki;Rama Loki;;Rama Loki;;;;;;;;;x
-byakugan;Rama Fenrir;Rama Fenrir;Rama Fenrir;;Rama Fenrir;;;;;;;;;x
+byakugan;Kalash;Kalash;Kalash;;Kalash;;;;;;;;;x
 sharingan_desc;Rama Fenrir;Rama Fenrir;Rama Fenrir;;La rama Loki de los Pentaghast es descendiente por la lï¿½nea femenina de Vee. Este rasgo genï¿½tico solo se hereda a travï¿½s de las madres. Garantiza que se esté preparado para la intriga;;;;;;;;;x
-byakugan_desc;Rama Fenrir;Rama Fenrir;Rama Fenrir;;La rama Loki de los Pentaghast es descendiente por la línea paterna de Aita. Este rasgo genético solo se hereda a través de los padres. Garantiza que se esté preparado para la guerra;;;;;;;;;x
+byakugan_desc;;;;;El Kalash es una condición genética que produce un aclaramiento del iris hasta tornarlo de un lila pálido. Se hereda a través del padre. Quienes poseen este rasgo tienen ventajas significativas en la guerra.;;;;;;;;;x
 k_pentaghast;;;;;;;;;;;;;;x
-odin;;;;;El ojo de la eternidad;;;;;;;;;x
-odin_desc;;;;;Los ojos de esta persona tienen un llamativo patrón. Este ojo surge de la combinación de padres de la rama Loki y la rama Fenrir.;;;;;;;;;x
+rinnegan;;;;;El ojo de la eternidad;;;;;;;;;x
+rinnegan_desc;;;;;Los ojos de esta persona tienen un llamativo patrón. Este ojo surge de la combinación de padres de la rama Loki y la rama Fenrir.;;;;;;;;;x
 FIND_VEE;;;;;Vee hallada;;;;;;;;;x
 FIND_AITA;;;;;Khalga hallado;;;;;;;;;x
 ##############
@@ -21,23 +21,7 @@ GOD_FENRIR;;;;;El dios sin ojos;;;;;;;;;x
 ############
 ## TRAITS ##
 ############
-ak_cero;;;;;Anillo raro;;;;;;;;;x
-ak_cero_desc;;;;;Un anillo con la inscripción "Cero" sobre él;;;;;;;;;x
-ak_joya;;;;;Anillo raro;;;;;;;;;x
-ak_joya_desc;;;;;Un anillo con la inscripción "Joya" sobre él;;;;;;;;;x
-ak_blanco;;;;;Anillo raro;;;;;;;;;x
-ak_blanco_desc;;;;;Un anillo con la inscripción "Blanco" sobre él;;;;;;;;;x
-darksister;;;;;Freya;;;;;;;;;x
-darksister_desc;;;;;La espada Freya, una reliquia sagrada de tiempos antiguos;;;;;;;;;x
-blackfyre;;;;;Fuego Oscuro;;;;;;;;;x
-blackfyre_desc;;;;;La espada Fuego Oscuro, una reliquia sagrada de tiempos antiguos;;;;;;;;;x
 
-
-
-
-EVTDESC250277;;;;;Has heredado de [Root.GetTitledFirstName] su famosa espada, úsala con honor;;;;;;;;;x
-EVTDESC250277B;;;;;Has heredado de [Root.GetTitledFirstName] su famosa espada, úsala con honor;;;;;;;;;x
-EVTOPTA250277;It shall be done;Il en sera ainsi;;;Así será;;;;;;;;;x
 
 # VEE LIFE
 

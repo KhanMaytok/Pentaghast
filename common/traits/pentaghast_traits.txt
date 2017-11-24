@@ -1,30 +1,30 @@
 # Vee genetic traits. Inherits to all childrens. Only women are no recesive
 sharingan = {
-	intrigue = 5
-	combat_rating = 2
+    intrigue = 5
+    combat_rating = 2
     customizer = no
     opposites =  {
-		byakugan
-	}
-	opposite_opinion = -500
+        byakugan
+    }
+    opposite_opinion = -500
 }
 
 # Khalga genetic traits. Inherits to all childrens. Only men are no recesive
 byakugan = {
-	martial = 5
-	combat_rating = 2
-	customizer = no
-	opposites =  {
-		sharingan
-	}
-	opposite_opinion = -500
+    martial = 5
+    combat_rating = 2
+    customizer = no
+    opposites =  {
+        sharingan
+    }
+    opposite_opinion = -500
 }
 
 rinnegan = {
-	customizer = no
-	martial = 30
-	intrigue = 30
-	combat_rating = 10
-	ai_ambition = 500
-	cached = yes
+    customizer = no
+    martial = 30
+    intrigue = 30
+    combat_rating = 10
+    ai_ambition = 500
+    cached = yes
 }

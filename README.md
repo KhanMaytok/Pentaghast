@@ -13,4 +13,4 @@
 
 Pentaghast is a little and personal mod for Crusader Kings 2. It brings some taste from MU Online game and adds new characters and two factions used for the [AAR _Orígenes_](https://www.maytok.com/): Pentaghast and Sakya.
 
-Every pull request and suggestions are welcome. 
+Every pull request and suggestions are welcome.

@@ -1,5 +1,5 @@
 600002 = {
-    name="Senua" # I'd like the game, man. There is a reason too
+    name="Senua" # I'd like the game, man. (There is a reason too)
     female=yes
     religion=pagan
     dynasty=300000
