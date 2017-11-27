@@ -1,5 +1,3 @@
-## Armors
-## BK sets
 leather_set = {
     monthly_character_prestige = 0.5
     quality = 1
@@ -10,6 +8,8 @@ leather_set = {
     slot = torso
 }
 
+## SCEPTERS
+
 battle_scepter = {
     monthly_character_prestige = 0.5
     global_tax_modifier = 0.1
@@ -18,7 +18,62 @@ battle_scepter = {
     stacking = no
     indestructible = yes
     picture = "GFX_battle_scepter"
-    slot = ceremonial_weapon
+    slot = scepter
+}
+
+master_scepter = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    quality = 1
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_master_scepter"
+    slot = scepter
+}
+
+great_scepter = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    quality = 1
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_battle_scepter"
+    slot = scepter
+}
+
+lord_scepter = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    quality = 1
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_lord_scepter"
+    slot = scepter
+}
+
+great_lord_scepter = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    quality = 1
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_great_lord_scepter"
+    slot = scepter
+}
+
+solei_scepter = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    quality = 1
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_solei_scepter"
+    slot = scepter
 }
 
 shinning_scepter = {
@@ -30,5 +85,371 @@ shinning_scepter = {
     stacking = no
     indestructible = yes
     picture = "GFX_shinning_scepter"
+    slot = scepter
+}
+
+# Bows
+
+silver_bow = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_silver_bow"
+    slot = weapon
+}
+
+chaos_nature_bow = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_chaos_bow"
+    slot = weapon
+}
+
+viper_bow = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_viper_bow"
+    slot = weapon
+}
+
+xeon_bow = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_xeon_bow"
+    slot = weapon
+}
+
+amazon_bow = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_amazon_bow"
+    slot = weapon
+}
+
+dark_stinger_bow = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_dark_stinger_bow"
+    slot = weapon
+}
+
+# shields
+
+legendary_shield = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_legendary_shield"
     slot = ceremonial_weapon
+}
+
+grand_soul_shield = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_grand_soul_shield"
+    slot = ceremonial_weapon
+}
+
+dragon_shield = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_dragon_shield"
+    slot = ceremonial_weapon
+}
+
+salamander_shield = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_salamander_shield"
+    slot = ceremonial_weapon
+}
+
+crimson_glory_shield = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_crimson_glory_shield"
+    slot = ceremonial_weapon
+}
+
+guardian_shield = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_guardian_shield"
+    slot = ceremonial_weapon
+}
+
+# swords
+
+short_sword = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_short_sword"
+    slot = weapon
+}
+
+kriss = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_kriss"
+    slot = weapon
+}
+
+double_blade = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_double_blade"
+    slot = weapon
+}
+
+lighting_sword = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_lighting_sword"
+    slot = weapon
+}
+
+crystal_sword = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_crystal_sword"
+    slot = weapon
+}
+
+double_blade = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_double_blade"
+    slot = weapon
+}
+
+sword_of_destruction = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_sword_of_destruction"
+    slot = weapon
+}
+
+spirit_sword = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_spirit_sword"
+    slot = weapon
+}
+
+thunder_blade = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_thunder_blade"
+    slot = weapon
+}
+
+rune_blade = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_rune_blade"
+    slot = weapon
+}
+
+knight_blade = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_knight_blade"
+    slot = weapon
+}
+
+explosion_blade = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_explosion_blade"
+    slot = weapon
+}
+
+bone_blade = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_bone_blade"
+    slot = weapon
+}
+
+flame_blade = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_flame_blade"
+    slot = weapon
+}
+
+dark_breaker = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_dark_breaker"
+    slot = weapon
+}
+
+sword_breaker = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_sword_breaker"
+    slot = weapon
+}
+
+flame_sword = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_flame_sword"
+    slot = weapon
+}
+
+imperial_sword = {
+    monthly_character_prestige = 0.5
+    global_tax_modifier = 0.1
+    diplomacy = 1
+    quality = 3
+    flags = { ancient }
+    stacking = no
+    indestructible = yes
+    picture = "GFX_imperial_sword"
+    slot = weapon
 }
