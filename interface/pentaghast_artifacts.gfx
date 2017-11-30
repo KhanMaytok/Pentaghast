@@ -22,5 +22,21 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_leather_set_small"
 		texturefile = "gfx\\interface\\inventory\\artifacts\\leather_set_small.dds"
-	}	
+	}
+	spriteType = {
+		name = "GFX_short_sword"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\short_sword.dds"
+	}
+	spriteType = {
+		name = "GFX_short_sword_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\short_sword_small.dds"
+	}
+	spriteType = {
+		name = "GFX_mourning_star"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\mourning_star.dds"
+	}
+	spriteType = {
+		name = "GFX_mourning_star_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\mourning_star_small.dds"
+	}
 }

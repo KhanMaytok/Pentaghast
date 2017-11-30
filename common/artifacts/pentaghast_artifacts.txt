@@ -1,9 +1,618 @@
+# ARMOR SETS
+# DK SETS
 leather_set = {
-    monthly_character_prestige = 0.5
+    monthly_character_prestige = 0.1
     quality = 1
-    flags = { ancient }
+    flags = { ancient tier1 }
+    stacking = yes
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+bronze_set = {
+    monthly_character_prestige = 0.1
+    quality = 1
+    flags = { ancient tier1 }
+    stacking = yes
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+scale_set = {
+    monthly_character_prestige = 0.1
+    quality = 1
+    flags = { ancient tier1 }
+    stacking = yes
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+brass_set = {
+    monthly_character_prestige = 0.1
+    quality = 1
+    flags = { ancient tier1 }
+    stacking = yes
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+plate_set = {
+    monthly_character_prestige = 0.1
+    quality = 1
+    flags = { ancient tier1 }
+    stacking = yes
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+dragon_set = {
+    monthly_character_prestige = 0.1
+    quality = 2
+    flags = { ancient tier2 }
+    stacking = yes
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+black_dragon_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
     stacking = no
-    indestructible = yes
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+dark_phoenix_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+great_dragon_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+dragon_knight_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+ash_crow_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+titanium_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+excelent_leather_set = {
+    monthly_character_prestige = 0.1
+    quality = 1
+    flags = { ancient tier1 }
+    stacking = yes
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+# DW SETS
+pad_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+bone_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+sphinx_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+legendary_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+grand_soul_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+venom_mist_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+grand_soul_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+eclipse_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+hades_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+excelent_pad_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+# MG
+storm_crow_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+thunder_hawnk_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+volcano_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+hurricane_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+vulcano_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+valiant_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+phantom_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+excelent_storm_crow_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+# ME
+excelent_storm_crow_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+# ME
+vine_set = {
+    monthly_character_prestige = 0.1
+    quality = 1
+    flags = { ancient tier1 }
+    stacking = yes
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+    active = {
+        is_female = yes
+    }
+}
+
+wind_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+    active = {
+        is_female = yes
+    }
+}
+
+silk_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+    active = {
+        is_female = yes
+    }
+}
+
+spirit_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+    active = {
+        is_female = yes
+    }
+}
+
+guardian_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+    active = {
+        is_female = yes
+    }
+}
+
+holy_spirit_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+    active = {
+        is_female = yes
+    }
+}
+
+red_spirit_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+    active = {
+        is_female = yes
+    }
+}
+
+sylphid_ray_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+    active = {
+        is_female = yes
+    }
+}
+
+iris_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+    active = {
+        is_female = yes
+    }
+}
+
+seraphim_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+    active = {
+        is_female = yes
+    }
+}
+
+excelent_vine_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+    active = {
+        is_female = yes
+    }
+}
+
+# Summoner
+violent_wind_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+    active = {
+        is_female = yes
+    }
+}
+
+red_wind_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+    active = {
+        is_female = yes
+    }
+}
+
+ancient_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+    active = {
+        is_female = yes
+    }
+}
+
+black_rose_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+    active = {
+        is_female = yes
+    }
+}
+
+storm_blitz_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+    active = {
+        is_female = yes
+    }
+}
+
+eternal_wing_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+    active = {
+        is_female = yes
+    }
+}
+
+# Dark Lord
+light_plate_set = {
+    monthly_character_prestige = 0.1
+    quality = 1
+    flags = { ancient tier1 }
+    stacking = yes
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+adamantine_set = {
+    monthly_character_prestige = 0.1
+    quality = 2
+    flags = { ancient tier3 }
+    stacking = yes
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+dark_steel_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+dark_master_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+sunlight_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+glorius_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+}
+
+royal_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
     picture = "GFX_leather_set"
     slot = torso
 }
@@ -239,27 +848,16 @@ guardian_shield = {
 # swords
 
 short_sword = {
-    monthly_character_prestige = 0.5
-    global_tax_modifier = 0.1
-    diplomacy = 1
-    quality = 3
+    monthly_character_prestige = 0.1
+    quality = 1
     flags = { ancient }
-    stacking = no
-    indestructible = yes
+    stacking = yes
+    indestructible = no
     picture = "GFX_short_sword"
     slot = weapon
-}
-
-kriss = {
-    monthly_character_prestige = 0.5
-    global_tax_modifier = 0.1
-    diplomacy = 1
-    quality = 3
-    flags = { ancient }
-    stacking = no
-    indestructible = yes
-    picture = "GFX_kriss"
-    slot = weapon
+    active = {
+        is_adult = yes
+    }
 }
 
 double_blade = {
@@ -451,5 +1049,18 @@ imperial_sword = {
     stacking = no
     indestructible = yes
     picture = "GFX_imperial_sword"
+    slot = weapon
+}
+
+# maces
+
+mourning_star = {
+    monthly_character_prestige = 0.1
+    combat_rating = 2
+    quality = 1
+    flags = { ancient mace }
+    stacking = yes
+    indestructible = no
+    picture = "GFX_mourning_star"
     slot = weapon
 }

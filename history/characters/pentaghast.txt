@@ -3,7 +3,7 @@
     female=yes
     religion=pagan
     dynasty=300000
-    culture="celtic"
+    culture="pictish"
     disallow_random_traits=yes
     trait="fair"
     trait="brave"

@@ -1,7 +1,7 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 sharingan;Rama Loki;Rama Loki;Rama Loki;;Rama Loki;;;;;;;;;x
 byakugan;Kalash;Kalash;Kalash;;Kalash;;;;;;;;;x
-sharingan_desc;Rama Fenrir;Rama Fenrir;Rama Fenrir;;La rama Loki de los Pentaghast es descendiente por la lï¿½nea femenina de Vee. Este rasgo genï¿½tico solo se hereda a travï¿½s de las madres. Garantiza que se esté preparado para la intriga;;;;;;;;;x
+sharingan_desc;Rama Fenrir;Rama Fenrir;Rama Fenrir;;La rama Loki de los Pentaghast es descendiente por la lï¿½nea femenina de Vee. Este rasgo genï¿½tico solo se hereda a través de las madres. Garantiza que se esté preparado para la intriga;;;;;;;;;x
 byakugan_desc;;;;;El Kalash es una condición genética que produce un aclaramiento del iris hasta tornarlo de un lila pálido. Se hereda a través del padre. Quienes poseen este rasgo tienen ventajas significativas en la guerra.;;;;;;;;;x
 k_pentaghast;;;;;;;;;;;;;;x
 rinnegan;;;;;El ojo de la eternidad;;;;;;;;;x
@@ -26,7 +26,7 @@ GOD_FENRIR;;;;;El dios sin ojos;;;;;;;;;x
 # VEE LIFE
 
 EVTTITLE_PENTAGHAST.1705;;;;;[Root.GetSonDaughter] está creciendo;;;;;;;;;x
-EVTDESC_PENTAGHAST.1705;;;;;Tu hija está creciendo y pronto comienza a despertar la atenciï¿½n de la corte.\nPosee una extraï¿½a y singular belleza a la que nadie muestra indiferencia. Sin duda serï¿½ una de las mujeres mï¿½s bellas del mundo;;;;;;;;;x
+EVTDESC_PENTAGHAST.1705;;;;;Tu hija está creciendo y pronto comienza a despertar la atención de la corte.\nPosee una extraña y singular belleza a la que nadie muestra indiferencia. Sin duda será una de las mujeres más bellas del mundo;;;;;;;;;x
 EVTOPTA_PENTAGHAST.1705;;;;;Siento mucho orgullo de mi hija;;;;;;;;;x
 
 EVTTITLE_PENTAGHAST.1704;;;;;Estoy creciendo;;;;;;;;;x
@@ -103,6 +103,14 @@ vir_sand_addict_desc;;;;;Tras consumir Arena de Vir, esta persona ha desarrollad
 ###############
 
 leather_set;;;;;Armadura de cuero;;;;;;;;;x
-leather_set_small;;;;;Esta armadura de cuero posee mucho más dureza y durabilidad que cualquier otra. Su superficie está orlada con intrincados diseños arcaicos repujados con mimo y detalle, esparcidos en toda su extensión. Sin duda, una pieza bella y funcional para el campo de batalla y los torneos.;;;;;;;;;x
+leather_set_desc;;;;;Esta armadura de cuero posee mucho más dureza y durabilidad que cualquier otra. Su superficie está orlada con intrincados diseños arcaicos repujados con mimo y detalle, esparcidos en toda su extensión. Sin duda, una pieza bella y funcional para el campo de batalla y los torneos.;;;;;;;;;x
+vine_set;;;;;Armadura Vino;;;;;;;;;x
+vine_set_desc;;;;;Esta armadura parece haber sido portada por una mujer guerrera.;;;;;;;;;x
+excelent_leather_set;;;;;Armadura de cuero;;;;;;;;;x
+excelent_leather_set_desc;;;;;Esta excelente armadura de cuero posee mucho más dureza y durabilidad que cualquier otra. Su superficie está orlada con intrincados diseños arcaicos repujados con mimo y detalle, esparcidos en toda su extensión. Sin duda, una pieza bella y funcional para el campo de batalla y los torneos.;;;;;;;;;x
 shinning_scepter;;;;;Shinning scepter;;;;;;;;;x
 shinning_scepter_desc;;;;;Este cetro que puede ser usado en el combate acompaña perfectamente a la armadura Glorious. Una vez activado por completo, refleja brillante un trozo de la gloria del mismo Sol;;;;;;;;;x
+short_sword;;;;;Espada corta;;;;;;;;;x
+short_sword_desc;;;;;Esta espada de hoja corta está hecha de un material más duro que cualquier otro conocido. Se dice que fueron encontradas por los visigodos durante el saqueo de la Ciudad Eterna.;;;;;;;;;x
+mourning_star;;;;;Estrella del amanecer;;;;;;;;;x
+mourning_star_desc;;;;;Este mazo con puntas afiladas como rayos de sol está hecho de un material más duro que cualquier otro conocido. Se dice que fueron encontrados por los visigodos durante el saqueo de la Ciudad Eterna. Actualmente solo pocos de estos se encuentan, haciendo que sean un bien preciado entre quienes los posean;;;;;;;;;x
