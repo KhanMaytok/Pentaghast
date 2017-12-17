@@ -1,4 +1,5 @@
-name="Pentaghast"
-path="mod/pentaghast"
-user_dir="pentaghast"
+name="Origins"
+path="mod/Origins"
+user_dir="Origins"
 picture="pentaghast.jpg"
+tags = { "Artifacts", "Societies" }

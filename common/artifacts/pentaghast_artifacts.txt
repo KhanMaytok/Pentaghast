@@ -181,7 +181,7 @@ grand_soul_set = {
     slot = torso
 }
 
-venom_mist_set = {
+dark_soul_set = {
     monthly_character_prestige = 0.1
     quality = 3
     flags = { ancient tier3 }
@@ -191,7 +191,7 @@ venom_mist_set = {
     slot = torso
 }
 
-grand_soul_set = {
+venom_mist_set = {
     monthly_character_prestige = 0.1
     quality = 3
     flags = { ancient tier3 }
@@ -252,16 +252,6 @@ thunder_hawnk_set = {
     slot = torso
 }
 
-volcano_set = {
-    monthly_character_prestige = 0.1
-    quality = 3
-    flags = { ancient tier3 }
-    stacking = no
-    indestructible = no
-    picture = "GFX_leather_set"
-    slot = torso
-}
-
 hurricane_set = {
     monthly_character_prestige = 0.1
     quality = 3
@@ -272,7 +262,7 @@ hurricane_set = {
     slot = torso
 }
 
-vulcano_set = {
+volcano_set = {
     monthly_character_prestige = 0.1
     quality = 3
     flags = { ancient tier3 }
@@ -313,17 +303,6 @@ excelent_storm_crow_set = {
 }
 
 # ME
-excelent_storm_crow_set = {
-    monthly_character_prestige = 0.1
-    quality = 3
-    flags = { ancient tier3 }
-    stacking = no
-    indestructible = no
-    picture = "GFX_leather_set"
-    slot = torso
-}
-
-# ME
 vine_set = {
     monthly_character_prestige = 0.1
     quality = 1
@@ -337,7 +316,7 @@ vine_set = {
     }
 }
 
-wind_set = {
+silk_set = {
     monthly_character_prestige = 0.1
     quality = 3
     flags = { ancient tier3 }
@@ -350,7 +329,7 @@ wind_set = {
     }
 }
 
-silk_set = {
+wind_set = {
     monthly_character_prestige = 0.1
     quality = 3
     flags = { ancient tier3 }
@@ -481,7 +460,7 @@ violent_wind_set = {
     }
 }
 
-red_wind_set = {
+red_wing_set = {
     monthly_character_prestige = 0.1
     quality = 3
     flags = { ancient tier3 }
@@ -534,6 +513,19 @@ storm_blitz_set = {
 }
 
 eternal_wing_set = {
+    monthly_character_prestige = 0.1
+    quality = 3
+    flags = { ancient tier3 }
+    stacking = no
+    indestructible = no
+    picture = "GFX_leather_set"
+    slot = torso
+    active = {
+        is_female = yes
+    }
+}
+
+excelent_violent_wind_set = {
     monthly_character_prestige = 0.1
     quality = 3
     flags = { ancient tier3 }

@@ -1,0 +1,117 @@
+600002 = {
+    name="Senua" # I'd like the game, man. (There is a reason too)
+    female=yes
+    religion=pagan
+    dynasty=300000
+    culture="pictish"
+    disallow_random_traits=yes
+    trait="fair"
+    trait="brave"
+    trait="elusive_shadow"
+    trait="mystic"
+
+    750.1.1={
+        birth="750.1.1"
+        effect = {
+            set_character_flag = is_senua
+        }
+    }
+    766.6.6={
+        effect = {
+            join_society=pentaghast_society
+            set_society_grandmaster=yes
+        }
+    }
+    900.1.1={
+        death="900.1.1"
+    }
+}
+
+600003 = {
+    name="Choden"
+    female=yes
+    religion=buddhist
+    culture=bodpa
+    disallow_random_traits=yes
+    trait="fair"
+    trait="brave"
+    trait="strong"
+
+    750.1.1={
+        birth="750.1.1"
+    }
+    768.6.6={
+        effect = {
+            join_society=sakya_society
+            set_society_grandmaster=yes
+            add_artifact=guardian_set
+        }
+    }
+    900.1.1={
+        death="900.1.1"
+    }
+}
+
+600004 = {
+    name="Khalil"
+    religion=sunni
+    culture="bedouin_arabic"
+    disallow_random_traits=yes
+    trait="brave"
+    trait="strong"
+
+    750.1.1={
+        birth="750.1.1"
+    }
+    768.6.6={
+        effect = {
+            join_society=sakya_society
+        }
+    }
+    900.1.1={
+        death="900.1.1"
+    }
+}
+
+600004 = {
+    name="Khalil"
+    religion=sunni
+    culture="somali"
+    disallow_random_traits=yes
+    trait="brave"
+    trait="strong"
+
+    750.1.1={
+        birth="750.1.1"
+    }
+    768.6.6={
+        effect = {
+            join_society=sakya_society
+        }
+    }
+    900.1.1={
+        death="900.1.1"
+    }
+}
+
+600005 = {
+    name="Dobrynia"
+    religion=slavic_pagan
+    culture="severian"
+    disallow_random_traits=yes
+    trait="brave"
+    trait="strong"
+
+    750.1.1={
+        birth="750.1.1"
+    }
+    768.6.6={
+        effect = {
+            join_society=sakya_society
+        }
+    }
+    900.1.1={
+        death="900.1.1"
+    }
+}
+

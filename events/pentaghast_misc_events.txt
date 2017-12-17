@@ -74,7 +74,7 @@ character_event = {
 					700 = { } # Fall back dead weight
 					100 = {
 						trigger = {
-							can_join_society = noldor_society
+							can_join_society = sakya_society
 						}
 						modifier = {
 							factor = 3
@@ -103,7 +103,7 @@ character_event = {
 							NOT = {	trait = slothful }
 							NOT = {	trait = zealous }
 						}
-						join_society = noldor_society
+						join_society = sakya_society
 						random_list = { # Artificially increase society influence for balance purposes
 							75 = {
 								modifier = {

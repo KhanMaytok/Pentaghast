@@ -8,7 +8,7 @@ has_valyrian_steel_sword_trigger = {
 	}	
 }
 
-has_pentaghast_society_prerequisites = {
+has_origins_society_prerequisites = {
 	age = 16
 	custom_tooltip = {
 		text = must_be_high_society_candidate

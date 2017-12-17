@@ -1,4 +1,4 @@
-# Pentaghast
+# Origins
 
 [![Travis](https://img.shields.io/travis/KhanMaytok/Pentaghast.svg)]()
 [![Coveralls](https://img.shields.io/coveralls/KhanMaytok/Pentaghast.svg)]()
@@ -11,7 +11,7 @@
 
 ![Cassandra](http://i.imgur.com/xKWEJ4q.jpg)
 
-Pentaghast is a little and personal mod for Crusader Kings 2. It brings some taste from MU Online game and adds new characters and two factions used for the [AAR _Orígenes_](https://www.maytok.com/): Pentaghast and Sakya.
+Origins is a little and personal mod for Crusader Kings 2. It brings some taste from MU Online and adds new characters and two factions used for the [AAR _Orígenes_](https://www.maytok.com/): Pentaghast and Sakya.
 
 Every pull request and suggestions are welcome.
 
@@ -19,13 +19,10 @@ Every pull request and suggestions are welcome.
 
 ### Artifacts
 
-_In ancient times, a mysterious race reigned over the earth. The only thing they left was their knowledge, accessible only to a few privileged, and their weapons and armor, more glorious than any other that has been seen._
+Search and collect artifacts scattered throughout the world. Upgrade them and fight for the glory, wealth or any other target with the help of these powerful ancient artifacts. There are common, rare and upgradable armor sets and weapons. 
 
-Search and collect artifacts scattered throughout the world. Upgrade them and fight for the glory, wealth or any other target with the help of these powerful ancient artifacts. There are common, rare and upgradable armor sets and weapons.
+TIER 1 weapons and sets are dispersed for all the map at the start of the game.
 
-__Tier 1__
+### Societies
 
-* Weapons
-  * Mourning Star (Tier 1, common)
-
-
+There are two societies: Pentaghast and Sakya. They search to get all artefacts for them and they are rivals.

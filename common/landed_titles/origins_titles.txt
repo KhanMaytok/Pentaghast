@@ -1,0 +1,5 @@
+## Sakya posessions
+b_shangrila = {
+	bodpa = "Shangri-La"
+	han = "Shangri-La"
+}

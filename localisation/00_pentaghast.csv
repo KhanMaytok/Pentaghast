@@ -11,9 +11,11 @@ FIND_AITA;;;;;Khalga hallado;;;;;;;;;x
 ##############
 ## RELIGION ##
 ##############
-pentaghast_group;;;;;Adoración a la diosa Madre;;;;;;;;;x
-pentaghast;;;;;La religión Pentaghast;;;;;;;;;x
-pentaghast_DESC;;;;;Los Pentaghast adoran a una extraña mezcla de variadas religiones, formando un extraño culto incomprensible a las demás personas;;;;;;;;;x
+GODDESS_VEE;;;;;La diosa;;;;;;;;;x
+origins_pentaghast;;;;;Adoración a la diosa Madre;;;;;;;;;x
+origins_sakya;;;;;La religión Sakya;;;;;;;;;x
+origins_pentaghast_DESC;;;;;Los Pentaghast adoran a una extraña mezcla de variadas religiones, formando un extraño culto incomprensible a las demás personas;;;;;;;;;x
+origins_sakya_DESC;;;;;Los Pentaghast adoran a una extraña mezcla de variadas religiones, formando un extraño culto incomprensible a las demás personas;;;;;;;;;x
 
 GOD_VEE;;;;;La Gran Diosa Madre;;;;;;;;;x
 GOD_FENRIR;;;;;El dios sin ojos;;;;;;;;;x
@@ -35,7 +37,7 @@ EVTOPTA_PENTAGHAST.1704;;;;;¡Soy preciosa!;;;;;;;;;x
 
 # SOCIETIES
 must_be_high_society_candidate;;;;;Debe sobresalir por sobre el resto;;;;;;;;;x
-has_pentaghast_society_prerequisites;;;;;Debe cumplir requisitos para las dos sociedades antiguas;;;;;;;;;x
+has_origins_society_prerequisites;;;;;Debe cumplir requisitos para las dos sociedades antiguas;;;;;;;;;x
 pentaghast_society;;;;;Los Pentaghast;;;;;;;;;x
 pentaghast_society_desc;;;;;Esta sociedad secreta es tan hermética que muchos dudan de su existencia.\nSus objetivos nunca han sido claros y solo se han confirmado algunos miembros aislados a lo largo del tiempo. Se aconseja tener prudencia al tratar siquiera de obtener noticias de ésta o incluso mencionar su nombre en voz alta.;;;;;;;;;x
 pentaghast_society_rank_4_male;;;;;Supremo Líder;;;;;;;;;x
@@ -48,17 +50,17 @@ pentaghast_society_rank_1_male;;;;;Iniciado;;;;;;;;;x
 pentaghast_society_rank_1_female;;;;;Iniciada;;;;;;;;;x
 currency_name_pentaghast_society;;;;;Poder;;;;;;;;;x
 
-noldor_society;;;;;Los Noldor;;;;;;;;;x
-noldor_society_desc;;;;;Esta sociedad secreta es tan hermética que muchos dudan de su existencia.\nSus objetivos nunca han sido claros y solo se han confirmado algunos miembros aislados a lo largo del tiempo. Se aconseja tener prudencia al tratar siquiera de obtener noticias de ésta o incluso mencionar su nombre en voz alta.;;;;;;;;;x
-noldor_society_rank_4_male;;;;;Supremo Líder;;;;;;;;;x
-noldor_society_rank_4_female;;;;;Suprema Líder;;;;;;;;;x
-noldor_society_rank_3_male;;;;;Gran caballero;;;;;;;;;x
-noldor_society_rank_3_female;;;;;Gran dama;;;;;;;;;x
-noldor_society_rank_2_male;;;;;Acólito oscuro;;;;;;;;;x
-noldor_society_rank_2_female;;;;;Acólito oscura;;;;;;;;;x
-noldor_society_rank_1_male;;;;;Iniciado;;;;;;;;;x
-noldor_society_rank_1_female;;;;;Iniciada;;;;;;;;;x
-currency_name_noldor_society;;;;;Poder;;;;;;;;;x
+sakya_society;;;;;Los Sakya;;;;;;;;;x
+sakya_society_desc;;;;;Esta sociedad secreta es tan hermética que muchos dudan de su existencia.\nSus objetivos nunca han sido claros y solo se han confirmado algunos miembros aislados a lo largo del tiempo. Se aconseja tener prudencia al tratar siquiera de obtener noticias de ésta o incluso mencionar su nombre en voz alta.;;;;;;;;;x
+sakya_society_rank_4_male;;;;;Supremo Líder;;;;;;;;;x
+sakya_society_rank_4_female;;;;;Suprema Líder;;;;;;;;;x
+sakya_society_rank_3_male;;;;;Gran caballero;;;;;;;;;x
+sakya_society_rank_3_female;;;;;Gran dama;;;;;;;;;x
+sakya_society_rank_2_male;;;;;Acólito oscuro;;;;;;;;;x
+sakya_society_rank_2_female;;;;;Acólito oscura;;;;;;;;;x
+sakya_society_rank_1_male;;;;;Iniciado;;;;;;;;;x
+sakya_society_rank_1_female;;;;;Iniciada;;;;;;;;;x
+currency_name_sakya_society;;;;;Poder;;;;;;;;;x
 
 
 venom_vir_effect;;;;;Experimentar con la Arena de Vir;;;;;;;;;x
@@ -114,3 +116,9 @@ short_sword;;;;;Espada corta;;;;;;;;;x
 short_sword_desc;;;;;Esta espada de hoja corta está hecha de un material más duro que cualquier otro conocido. Se dice que fueron encontradas por los visigodos durante el saqueo de la Ciudad Eterna.;;;;;;;;;x
 mourning_star;;;;;Estrella del amanecer;;;;;;;;;x
 mourning_star_desc;;;;;Este mazo con puntas afiladas como rayos de sol está hecho de un material más duro que cualquier otro conocido. Se dice que fueron encontrados por los visigodos durante el saqueo de la Ciudad Eterna. Actualmente solo pocos de estos se encuentan, haciendo que sean un bien preciado entre quienes los posean;;;;;;;;;x
+
+############
+## PLACES ##
+############
+
+b_shangrila;;;;;Shangri-La;;;;;;;;;x

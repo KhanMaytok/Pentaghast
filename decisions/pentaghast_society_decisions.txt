@@ -6,7 +6,7 @@ society_decisions = {
 			has_dlc = "Mystics"
 			OR = {
 				society_member_of = pentaghast_society
-				society_member_of = noldor_society
+				society_member_of = sakya_society
 			}			
 			NOT = {	has_character_flag = has_taken_vir_sand	}
 		}
@@ -133,7 +133,7 @@ targeted_decisions = {
 				}
 				NOT = { has_character_flag = being_recruited_by_pentaghast_society }
 			}
-			#has_pentaghast_society_prerequisites = yes
+			#has_origins_society_prerequisites = yes
 			FROM = {
 				is_inaccessible_trigger = no
 				custom_tooltip = {
