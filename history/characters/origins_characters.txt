@@ -53,30 +53,9 @@
 }
 
 600004 = {
-    name="Khalil"
-    religion=sunni
-    culture="bedouin_arabic"
-    disallow_random_traits=yes
-    trait="brave"
-    trait="strong"
-
-    750.1.1={
-        birth="750.1.1"
-    }
-    768.6.6={
-        effect = {
-            join_society=sakya_society
-        }
-    }
-    900.1.1={
-        death="900.1.1"
-    }
-}
-
-600004 = {
-    name="Khalil"
-    religion=sunni
-    culture="somali"
+    name="Khalil" # Hold b_gremi - Kakheti
+    religion=orthodox
+    culture="georgian"
     disallow_random_traits=yes
     trait="brave"
     trait="strong"
@@ -95,7 +74,28 @@
 }
 
 600005 = {
-    name="Dobrynia"
+    name="Khalil" # Holds b_maros
+    religion=tengri_pagan
+    culture="avar"
+    disallow_random_traits=yes
+    trait="brave"
+    trait="strong"
+
+    750.1.1={
+        birth="750.1.1"
+    }
+    768.6.6={
+        effect = {
+            join_society=sakya_society
+        }
+    }
+    900.1.1={
+        death="900.1.1"
+    }
+}
+
+600006 = {
+    name="Dobrynia" # Holds b_chiavenna
     religion=slavic_pagan
     culture="severian"
     disallow_random_traits=yes

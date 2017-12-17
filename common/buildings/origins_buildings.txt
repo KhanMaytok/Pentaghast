@@ -1,0 +1,16 @@
+temple = {
+	shangrila_walls = {
+	potential = {
+		FROMFROM = {
+			title = b_shangrila
+		}
+	}
+	desc = shangrila_walls_desc
+	gold_cost = 150
+	build_time = 1460 #4y
+	fort_level = 50.0
+	ai_creation_factor = 86
+
+	extra_tech_building_start = 0.0
+	}
+}
