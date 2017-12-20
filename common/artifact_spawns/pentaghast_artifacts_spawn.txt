@@ -1,3 +1,7 @@
+## Assign the sets to characters
+
+
+
 short_sword = {
     max_amount = 60
     spawn_date = -1.1.1
