@@ -1,22 +1,7 @@
 spriteTypes = {
-
 	spriteType = {
 		name = "GFX_trait_sharingan"
 		texturefile = "gfx/traits/loki.tga"
-		noOfFrames = 1
-		norefcount = yes
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	spriteType = {
-		name = "GFX_trait_blackfyre"
-		texturefile = "gfx/traits/blackfyre.tga"
-		noOfFrames = 1
-		norefcount = yes
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	spriteType = {
-		name = "GFX_trait_darksister"
-		texturefile = "gfx/traits/darksister.tga"
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"

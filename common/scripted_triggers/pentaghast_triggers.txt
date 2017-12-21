@@ -1,13 +1,3 @@
-has_valyrian_steel_sword_trigger = {
-	custom_tooltip = {
-		text = has_valyrian_steel_sword_trigger
-		hidden_tooltip = {
-			OR = {
-				trait = blackfyre				
-		}	
-	}	
-}
-
 has_origins_society_prerequisites = {
 	age = 16
 	custom_tooltip = {

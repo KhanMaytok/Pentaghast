@@ -51,7 +51,7 @@ character_event = {
     }
 }
 
-# KHAVEE.101 - Charlemagne receives Konan
+# KHAVEE.101 - Charlemagne receives Senua
 character_event = {
     id = KHAVEE.101
     desc = EVTDESC_PENTAGHAST_101
@@ -79,7 +79,7 @@ character_event = {
     is_triggered_only = yes
 
     trigger = {
-        character = 600002 #Konan
+        character = 600002 # Senua
         NOT = { has_character_flag = vee_spawned }
     }
     option = {
@@ -103,7 +103,6 @@ character_event = {
             add_trait = sharingan
             set_character_flag = is_vee
             set_focus = focus_ch_heritage
-            wealth = 1000
         }
         # Khalga born
         create_character = {
@@ -124,7 +123,6 @@ character_event = {
             add_trait = immortal
             set_character_flag = is_khalga
             set_focus = focus_ch_heritage
-            wealth = 1000
             set_character_flag = wolf_blood_first_generation
             add_character_modifier = {
                 name = wolf_child
@@ -137,7 +135,7 @@ character_event = {
     }
 }
 
-# Charlemagne notification
+# KHAVEE.103 - Charlemagne notification
 character_event = {
     id = KHAVEE.103
     title = EVTTITLE_PENTAGHAST_103
@@ -154,8 +152,7 @@ character_event = {
     }
 }
 
-
-# KHAVEE.112 - Khalga flyes
+# KHAVEE.104 - Khalga flyes
 character_event = {
     id = KHAVEE.104
     title = EVTTITLE_PENTAGHAST_112
@@ -189,7 +186,7 @@ character_event = {
     }
 }
 
-# KHAVEE.113 - SELECT BAGHATUR
+# KHAVEE.105 - SELECT BAGHATUR
 character_event = {
     id = KHAVEE.105
     hide_window = yes
@@ -203,7 +200,7 @@ character_event = {
     }
 }
 
-# KHAVEE.114 - BAGHATUR receives KHALGA
+# KHAVEE.106 - BAGHATUR receives KHALGA
 character_event = {
     id = KHAVEE.106
     title = FIND_AITA
