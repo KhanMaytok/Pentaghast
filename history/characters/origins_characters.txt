@@ -44,7 +44,6 @@
         effect = {
             join_society=sakya_society
             set_society_grandmaster=yes
-            add_artifact=guardian_set
         }
     }
     900.1.1={
@@ -53,9 +52,9 @@
 }
 
 600004 = {
-    name="Khalil" # Hold b_gremi - Kakheti
-    religion=orthodox
-    culture="georgian"
+    name="Gerold" # Charlemagne
+    religion=catholic
+    culture="old_frankish"
     disallow_random_traits=yes
     trait="brave"
     trait="strong"
@@ -63,7 +62,8 @@
     750.1.1={
         birth="750.1.1"
     }
-    768.6.6={
+    751.6.6={
+        employer=6392
         effect = {
             join_society=sakya_society
         }
@@ -74,9 +74,9 @@
 }
 
 600005 = {
-    name="Khalil" # Holds b_maros
-    religion=tengri_pagan
-    culture="avar"
+    name="Mirza" # Abderraman
+    religion=sunni
+    culture="bedouin_arabic"
     disallow_random_traits=yes
     trait="brave"
     trait="strong"
@@ -85,6 +85,7 @@
         birth="750.1.1"
     }
     768.6.6={
+        employer=73679
         effect = {
             join_society=sakya_society
         }
@@ -95,9 +96,9 @@
 }
 
 600006 = {
-    name="Dobrynia" # Holds b_chiavenna
-    religion=slavic_pagan
-    culture="severian"
+    name="Arnolfo" # Rome
+    religion=catholic
+    culture="italian"
     disallow_random_traits=yes
     trait="brave"
     trait="strong"
@@ -106,6 +107,7 @@
         birth="750.1.1"
     }
     768.6.6={
+        employer=7864
         effect = {
             join_society=sakya_society
         }

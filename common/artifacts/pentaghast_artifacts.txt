@@ -56,7 +56,7 @@ dragon_set = {
     flags = { ancient tier6 }
     stacking = yes
     indestructible = no
-    picture = "GFX_leather_set"
+    picture = "GFX_dragon_set"
     slot = torso
 }
 
@@ -167,7 +167,7 @@ legendary_set = {
     flags = { ancient tier6 }
     stacking = yes
     indestructible = no
-    picture = "GFX_leather_set"
+    picture = "GFX_legendary_set"
     slot = torso
 }
 
@@ -215,16 +215,6 @@ hades_set = {
     monthly_character_prestige = 0.5
     quality = 11
     flags = { ancient tier11 }
-    stacking = yes
-    indestructible = no
-    picture = "GFX_leather_set"
-    slot = torso
-}
-
-excelent_pad_set = {
-    monthly_character_prestige = 0.1
-    quality = 3
-    flags = { ancient tier3 }
     stacking = yes
     indestructible = no
     picture = "GFX_leather_set"
@@ -292,16 +282,6 @@ phantom_set = {
     slot = torso
 }
 
-excelent_storm_crow_set = {
-    monthly_character_prestige = 0.3
-    quality = 7
-    flags = { ancient tier7 }
-    stacking = yes
-    indestructible = no
-    picture = "GFX_leather_set"
-    slot = torso
-}
-
 # ME
 vine_set = {
     monthly_character_prestige = 0.1
@@ -361,7 +341,7 @@ guardian_set = {
     flags = { ancient tier7 }
     stacking = yes
     indestructible = no
-    picture = "GFX_leather_set"
+    picture = "GFX_guardian_set"
     slot = torso
     active = {
         is_female = yes
@@ -492,7 +472,7 @@ black_rose_set = {
     flags = { ancient tier10 }
     stacking = yes
     indestructible = no
-    picture = "GFX_leather_set"
+    picture = "GFX_black_rose_set"
     slot = torso
     active = {
         is_female = yes

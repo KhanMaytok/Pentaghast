@@ -1,5 +1,5 @@
 name="Origins"
 path="mod/Origins"
 user_dir="Origins"
-picture="pentaghast.jpg"
+picture="origins.jpg"
 tags = { "Artifacts", "Societies" }

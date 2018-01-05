@@ -4,7 +4,7 @@ black_rose_set = {
 	spawn_date = -1.1.1
 
 	spawn_chance = {
-		value = 100		
+		value = 100
 	}
 
 	weight = {
@@ -22,9 +22,97 @@ black_rose_set = {
     }
 }
 
+guardian_set = {
+	max_amount = 1
+	spawn_date = -1.1.1
 
+	spawn_chance = {
+		value = 100		
+	}
 
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			character = 600003
+		}
+	}
 
+	artifacts = {
+        guardian_set = {
+            value = 1
+        }
+    }
+}
+
+dragon_set = {
+	max_amount = 1
+	spawn_date = -1.1.1
+
+	spawn_chance = {
+		value = 100		
+	}
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			character = 600004 # Gerold - Charlemagne
+		}
+	}
+
+	artifacts = {
+        dragon_set = {
+            value = 1
+        }
+    }
+}
+
+legendary_set = {
+	max_amount = 1
+	spawn_date = -1.1.1
+
+	spawn_chance = {
+		value = 100		
+	}
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			character = 600005 # "Mirza" # Abderraman
+		}
+	}
+
+	artifacts = {
+        legendary_set = {
+            value = 1
+        }
+    }
+}
+
+storm_crow_set = {
+	max_amount = 1
+	spawn_date = -1.1.1
+
+	spawn_chance = {
+		value = 100		
+	}
+
+	weight = {
+		value = 0
+		additive_modifier = {
+			value = 100
+			character = 600006 # "Arnolfo" # Rome
+		}
+	}
+
+	artifacts = {
+        storm_crow_set = {
+            value = 1
+        }
+    }
+}
 
 short_sword = {
     max_amount = 60

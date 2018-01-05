@@ -39,4 +39,44 @@ spriteTypes = {
 		name = "GFX_mourning_star_small"
 		texturefile = "gfx\\interface\\inventory\\artifacts\\mourning_star_small.dds"
 	}
+	spriteType = {
+		name = "GFX_legendary_set"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\legendary_set.dds"
+	}
+	spriteType = {
+		name = "GFX_legendary_set_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\legendary_set_small.dds"
+	}
+	spriteType = {
+		name = "GFX_black_rose_set"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\black_rose_set.dds"
+	}
+	spriteType = {
+		name = "GFX_black_rose_set_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\black_rose_set_small.dds"
+	}
+	spriteType = {
+		name = "GFX_dragon_set"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\dragon_set.dds"
+	}
+	spriteType = {
+		name = "GFX_dragon_set_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\dragon_set_small.dds"
+	}
+	spriteType = {
+		name = "GFX_guardian_set"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\guardian_set.dds"
+	}
+	spriteType = {
+		name = "GFX_guardian_set_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\guardian_set_small.dds"
+	}
+	spriteType = {
+		name = "GFX_storm_crow_set"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\storm_crow_set.dds"
+	}
+	spriteType = {
+		name = "GFX_storm_crow_set_small"
+		texturefile = "gfx\\interface\\inventory\\artifacts\\storm_crow_set_small.dds"
+	}
 }

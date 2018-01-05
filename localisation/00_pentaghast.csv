@@ -38,8 +38,8 @@ EVTOPTA_PENTAGHAST.1704;;;;;¡Soy preciosa!;;;;;;;;;x
 # SOCIETIES
 must_be_high_society_candidate;;;;;Debe sobresalir por sobre el resto;;;;;;;;;x
 has_origins_society_prerequisites;;;;;Debe cumplir requisitos para las dos sociedades antiguas;;;;;;;;;x
-pentaghast_society;;;;;Los Pentaghast;;;;;;;;;x
-pentaghast_society_desc;;;;;Esta sociedad secreta es tan hermética que muchos dudan de su existencia.\nSus objetivos nunca han sido claros y solo se han confirmado algunos miembros aislados a lo largo del tiempo. Se aconseja tener prudencia al tratar siquiera de obtener noticias de ésta o incluso mencionar su nombre en voz alta.;;;;;;;;;x
+pentaghast_society;The Pentagast;;;;Los Pentaghast;;;;;;;;;x
+pentaghast_society_desc;The origins of the Pentaghast society go back hundreds of years. At present, they are a powerful organization formed by dozens of members who act in the shadows. Its dome is made up of select people. Its purpose, revealed until now, is to collect the majority of existing artifacts with a purpose that is still unknown.;Les origines de la société Pentaghast remontent à des centaines d'années. À l'heure actuelle, ils sont une organisation puissante formée par des dizaines de membres qui agissent dans les restes. Le noyau de cette société est composé de personnes sélectionnées. Son but, révélé jusqu'à présent, est de collecter la majorité des artefacts existants dans un but encore inconnu.;;;Los orígenes de la sociedad Pentaghast se remontan a cientos de años atrás. En la actualidad, son una organización poderosa formada por decenas de mimebros que actúan en las sobras. Su cúpula está conformada por personas selectas. Su propósito, revelado hasta el momento, es recolectar la mayoría de artefactos existentes con un fin aún desconocido;;;;;;;;;x
 pentaghast_society_rank_4_male;;;;;Supremo Líder;;;;;;;;;x
 pentaghast_society_rank_4_female;;;;;Suprema Líder;;;;;;;;;x
 pentaghast_society_rank_3_male;;;;;Gran caballero;;;;;;;;;x
@@ -48,10 +48,10 @@ pentaghast_society_rank_2_male;;;;;Acólito oscuro;;;;;;;;;x
 pentaghast_society_rank_2_female;;;;;Acólito oscura;;;;;;;;;x
 pentaghast_society_rank_1_male;;;;;Iniciado;;;;;;;;;x
 pentaghast_society_rank_1_female;;;;;Iniciada;;;;;;;;;x
-currency_name_pentaghast_society;;;;;Poder;;;;;;;;;x
+currency_name_pentaghast_society;;;;;Influencia;;;;;;;;;x
 
 sakya_society;;;;;Los Sakya;;;;;;;;;x
-sakya_society_desc;;;;;Esta sociedad secreta es tan hermética que muchos dudan de su existencia.\nSus objetivos nunca han sido claros y solo se han confirmado algunos miembros aislados a lo largo del tiempo. Se aconseja tener prudencia al tratar siquiera de obtener noticias de ésta o incluso mencionar su nombre en voz alta.;;;;;;;;;x
+sakya_society_desc;;;;;Los Sakya vigilan el mundo desde su fortaleza impenetrable en el Himalaya. Son enemigos tradicionales de los Pentaghast: ambas sociedades han estado en guerra desde su orígen. Sus miembros son asesinos entrenados expertos, capaces de acabar con sus objetivos de forma limpia e indetectable.\nSus objetivos nunca han sido claros y solo se han confirmado algunos miembros aislados a lo largo del tiempo. Se aconseja tener prudencia al tratar siquiera de obtener noticias de ésta o incluso mencionar su nombre en voz alta.;;;;;;;;;x
 sakya_society_rank_4_male;;;;;Supremo Líder;;;;;;;;;x
 sakya_society_rank_4_female;;;;;Suprema Líder;;;;;;;;;x
 sakya_society_rank_3_male;;;;;Gran caballero;;;;;;;;;x
@@ -60,7 +60,7 @@ sakya_society_rank_2_male;;;;;Acólito oscuro;;;;;;;;;x
 sakya_society_rank_2_female;;;;;Acólito oscura;;;;;;;;;x
 sakya_society_rank_1_male;;;;;Iniciado;;;;;;;;;x
 sakya_society_rank_1_female;;;;;Iniciada;;;;;;;;;x
-currency_name_sakya_society;;;;;Poder;;;;;;;;;x
+currency_name_sakya_society;;;;;Influencia;;;;;;;;;x
 
 
 venom_vir_effect;;;;;Experimentar con la Arena de Vir;;;;;;;;;x
@@ -77,7 +77,7 @@ BURN_THEM_ALL;;;;;Que arda el mundo;;;;;;;;;x
 EVTDESC_PENTAGHAST_101;;;;;Mientras dabas un paseo a caballo por el pueblo que rodea tu castillo, una mujer de extrañas facciones se presenta ante ti, interrumpiendo tu marcha. Jamás habías visto un ser tan bello. Ruega tu protección, pues dice ser perseguida por un malvado conde de tierras lejanas.;;;;;;;;;x
 EVTOPTA_PENTAGHAST_101;;;;;Bien puede quedarse en mi corte;;;;;;;;;x
 EVTTITLE_PENTAGHAST_103;;;;;Nueva visa;;;;;;;;;x
-EVTDESC_PENTAGHAST_103;;;;;La recién llegada ha alumbrado gemelos. En mi mente aun vagan pensamientos como mariposas en primavera acerca de la noche donde Konan y yo compartimos una velada que se desdibuja bajo la niebla del vino. ¿Qué pasó aquella noche? Konan no me ha dicho nada ni yo quiero preguntárselo. En la corte, todos parecen mirarla con recelos, pero a ella no le importa. Su belleza irreal se impone sobre todos quienes la rodean.;;;;;;;;;x
+EVTDESC_PENTAGHAST_103;;;;;La recién llegada ha alumbrado gemelos. En mi mente aun vagan pensamientos como mariposas en primavera acerca de la noche donde Konan y yo compartimos una velada que se desdibuja bajo la niebla del vino. ¿Qué pasó aquella noche? Senua no me ha dicho nada ni yo quiero preguntárselo. En la corte, todos parecen mirarla con recelos, pero a ella no le importa. Su belleza irreal se impone sobre todos quienes la rodean.;;;;;;;;;x
 EVTDESC_PENTAGHAST_108;;;;;Hace semanas que no uso arena de Vir para abrir la mente, pero sigo rememorando la experiencia con frecuencia. Me cuesta olvidar lo que he visto y ansío probar la droga otra vez.;;;;;;;;;x
 EVTTITLE_PENTAGHAST_109;;;;;La bomba de vir;;;;;;;;;x
 EVTDESC_PENTAGHAST_109;;;;;La bomba de Vir es una de las aplicaciones más poderosas y destructivas de aquel. Ataca a todos los organismos vivos y vaporiza ropa, carne, hueso e incluso piedra dentro del radio de la bomba. Se dice también que la bomba de Vir absorbe las almas de sus víctimas en una esfera de energía maligna, donde quedan atrapadas en un orbe de tormento oscuro hasta el fin del tiempo;;;;;;;;;x
@@ -116,6 +116,8 @@ short_sword;;;;;Espada corta;;;;;;;;;x
 short_sword_desc;;;;;Esta espada de hoja corta está hecha de un material más duro que cualquier otro conocido. Se dice que fueron encontradas por los visigodos durante el saqueo de la Ciudad Eterna.;;;;;;;;;x
 mourning_star;;;;;Estrella del amanecer;;;;;;;;;x
 mourning_star_desc;;;;;Este mazo con puntas afiladas como rayos de sol está hecho de un material más duro que cualquier otro conocido. Se dice que fueron encontrados por los visigodos durante el saqueo de la Ciudad Eterna. Actualmente solo pocos de estos se encuentan, haciendo que sean un bien preciado entre quienes los posean;;;;;;;;;x
+black_rose_set;;;;;Armadura Rosa Negra;;;;;;;;;x
+black_rose_set_desc;;;;;Armadura Rosa Negra.;;;;;;;;;x
 
 ############
 ## PLACES ##

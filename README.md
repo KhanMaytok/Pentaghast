@@ -26,3 +26,10 @@ TIER 1 weapons and sets are dispersed for all the map at the start of the game.
 ### Societies
 
 There are two societies: Pentaghast and Sakya. They search to get all artefacts for them and they are rivals.
+
+### Roadmap
+
+There are some urgent features to made before a stable launch, because the are save-game-incompatible.
+
+[] Sets spawning
+
