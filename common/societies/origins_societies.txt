@@ -1,9 +1,9 @@
 ### THE SAKYA ###
 sakya_society = {
     primary_attribute = intrigue
-    is_secret = no
+    is_secret = yes
     criminal = yes
-    devil_worshipper = no
+    devil_worshipper = yes
     opinion_to_other_members = +15
     opinion_to_pretenders = -25         #Pretenders is the opinion you have of people perceived/discovered to be in your society.
     opinion_to_perceived_members = -25  #Perceived is the opinion you have of people perceived/discovered to be of a society you're not part of
@@ -31,7 +31,7 @@ sakya_society = {
         }
     }
 
-    show_society = {        
+    show_society = {
         age = 16
     }
 
@@ -39,8 +39,8 @@ sakya_society = {
 
     society_rank = {
         level = 1
-        limit = 50 
-        startup_limit = 50
+        limit = 100 
+        startup_limit = 10
         modifier = {
             is_visible = {
                 OR = {
@@ -50,15 +50,13 @@ sakya_society = {
             }
             murder_plot_power_modifier = 0.1 # increased plotpower
         }
-        decisions = {
-            venom_vir_effect
-        }
+        decisions = { }
     }
     
     society_rank = {
         level = 2
-        limit = 20
-        startup_limit = 15
+        limit = 50
+        startup_limit = 6
         modifier = { 
             is_visible = {
                 OR = {
@@ -78,8 +76,8 @@ sakya_society = {
     
     society_rank = {
         level = 3
-        limit = 9
-        startup_limit = 9
+        limit = 25 
+        startup_limit = 3
         modifier = {
             is_visible = {
                 OR = {
@@ -100,7 +98,7 @@ sakya_society = {
 
     society_rank = {
         level = 4
-        limit = 1 
+        limit = 5
         startup_limit = 1
         modifier = {
             is_visible = {
@@ -191,7 +189,7 @@ sakya_society = {
     member_score_per_rank = 100
 
     member_score = {
-        value = 10      
+        value = 10
         
         modifier = {
             trait = erudite
@@ -245,7 +243,6 @@ sakya_society = {
     
     startup_populate = {
         trigger = {
-            culture_group = arabic
             ai = yes
             controls_religion = no 
             age = 16
@@ -254,7 +251,7 @@ sakya_society = {
             NOT = { mercenary = yes }
             OR = {
                 NOT = { holy_order = yes }
-            }           
+            }
             OR = {
                 trait = genius
                 trait = ambitious
@@ -286,9 +283,9 @@ sakya_society = {
 ### PENTAGHAST SOCIETY ###
 pentaghast_society = {
     primary_attribute = intrigue
-    is_secret = no
+    is_secret = yes
     criminal = yes
-    devil_worshipper = no
+    devil_worshipper = yes
     opinion_to_other_members = +5
     opinion_to_pretenders = -40         #Pretenders is the opinion you have of people perceived/discovered to be in your society.
     opinion_to_perceived_members = -40  #Perceived is the opinion you have of people perceived/discovered to be of a society you're not part of
@@ -326,8 +323,8 @@ pentaghast_society = {
 
     society_rank = {
         level = 1
-        limit = 300
-        startup_limit = 100
+        limit = 100 
+        startup_limit = 10
         decisions = {
             venom_vir_effect
         }
@@ -335,8 +332,8 @@ pentaghast_society = {
     
     society_rank = {
         level = 2
-        limit = 150
-        startup_limit = 50
+        limit = 50
+        startup_limit = 6
         modifier = {
             is_visible = {
                 OR = {
@@ -352,8 +349,8 @@ pentaghast_society = {
     
     society_rank = {
         level = 3
-        limit = 12
-        startup_limit = 12
+        limit = 25 
+        startup_limit = 3
         modifier = {
             is_visible = {
                 OR = {
@@ -370,7 +367,7 @@ pentaghast_society = {
 
     society_rank = {
         level = 4
-        limit = 1
+        limit = 5
         startup_limit = 1
         modifier = { 
             is_visible = {
@@ -545,12 +542,12 @@ pentaghast_society = {
     
     startup_populate = {
         trigger = { 
-            culture_group = iberian     
+            culture_group = old_frankish     
             ai = yes
             controls_religion = no
             age = 16
             is_in_society = no
-            NOT = { higher_tier_than = DUKE }
+            NOT = { higher_tier_than = BARON }
             OR = {
                 trait = genius
                 trait = ambitious
